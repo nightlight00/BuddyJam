@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},"order":15,},
+    {"id":{"name":"Note2","path":"notes/Note2/Note2.yy",},"order":17,},
     {"id":{"name":"Note1","path":"notes/Note1/Note1.yy",},"order":16,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
