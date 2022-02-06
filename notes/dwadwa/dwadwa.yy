@@ -4,7 +4,7 @@
     "path": "BuddyJam.yyp",
   },
   "resourceVersion": "1.1",
-  "name": "Note1",
+  "name": "dwadwa",
   "tags": [],
   "resourceType": "GMNotes",
 }
