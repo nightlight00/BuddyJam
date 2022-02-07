@@ -1,13 +1,16 @@
 {
   "resources": [
     {"id":{"name":"o_depthsorter","path":"objects/o_depthsorter/o_depthsorter.yy",},"order":1,},
+    {"id":{"name":"CheckForPlayer","path":"scripts/CheckForPlayer/CheckForPlayer.yy",},"order":0,},
     {"id":{"name":"wg_goal","path":"objects/wg_goal/wg_goal.yy",},"order":10,},
+    {"id":{"name":"s_testp","path":"sprites/s_testp/s_testp.yy",},"order":28,},
     {"id":{"name":"o_pickup_parent","path":"objects/o_pickup_parent/o_pickup_parent.yy",},"order":2,},
     {"id":{"name":"walker","path":"objects/walker/walker.yy",},"order":6,},
     {"id":{"name":"o_worldgen","path":"objects/o_worldgen/o_worldgen.yy",},"order":0,},
     {"id":{"name":"o_enemy_spider","path":"objects/o_enemy_spider/o_enemy_spider.yy",},"order":0,},
     {"id":{"name":"smartwalker","path":"objects/smartwalker/smartwalker.yy",},"order":8,},
     {"id":{"name":"o_egg","path":"objects/o_egg/o_egg.yy",},"order":4,},
+    {"id":{"name":"o_Enemy_1","path":"objects/o_Enemy_1/o_Enemy_1.yy",},"order":0,},
     {"id":{"name":"o_eProj","path":"objects/o_eProj/o_eProj.yy",},"order":0,},
     {"id":{"name":"spr_goal","path":"sprites/spr_goal/spr_goal.yy",},"order":9,},
     {"id":{"name":"o_walker","path":"objects/o_walker/o_walker.yy",},"order":1,},
@@ -64,7 +67,7 @@
   ],
   "Folders": [
     {"folderPath":"folders/generation_test.yy","order":17,"resourceVersion":"1.0","name":"generation_test","tags":[],"resourceType":"GMFolder",},
-    {"folderPath":"folders/group1.yy","order":18,"resourceVersion":"1.0","name":"group1","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Map.yy","order":18,"resourceVersion":"1.0","name":"Map","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Player.yy","order":19,"resourceVersion":"1.0","name":"Player","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Player/UI.yy","order":1,"resourceVersion":"1.0","name":"UI","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Player/Sprites.yy","order":2,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -77,6 +80,8 @@
     {"folderPath":"folders/Enemies/Spider.yy","order":1,"resourceVersion":"1.0","name":"Spider","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Enemies/eProjectiles.yy","order":2,"resourceVersion":"1.0","name":"eProjectiles","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Pickups.yy","order":27,"resourceVersion":"1.0","name":"Pickups","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Enemies/Enemy1.yy","order":3,"resourceVersion":"1.0","name":"Enemy1","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Scripts.yy","order":29,"resourceVersion":"1.0","name":"Scripts","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},

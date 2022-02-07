@@ -9,3 +9,9 @@ hitpoints = maxhitpoints;
 	
 
 enemyDying = false;
+
+//are we chasing the player?
+alert = false;
+
+//distance to start chasing the player
+alert_dis = 100;
