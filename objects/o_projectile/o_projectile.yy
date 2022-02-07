@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "s_test",
-    "path": "sprites/s_test/s_test.yy",
+    "name": "s_bullets",
+    "path": "sprites/s_bullets/s_bullets.yy",
   },
   "solid": false,
   "visible": true,
@@ -30,6 +30,7 @@
   ],
   "properties": [
     {"varType":1,"value":"1","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"penetrate","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":0,"value":"10","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"lifetime","tags":[],"resourceType":"GMObjectProperty",},
   ],
   "overriddenProperties": [],
   "parent": {
