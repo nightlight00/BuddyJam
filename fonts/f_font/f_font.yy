@@ -132,7 +132,7 @@
     "path": "BuddyJam.yyp",
   },
   "resourceVersion": "1.0",
-  "name": "Font1",
+  "name": "f_font",
   "tags": [],
   "resourceType": "GMFont",
 }

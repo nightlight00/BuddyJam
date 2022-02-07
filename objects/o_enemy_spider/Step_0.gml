@@ -1,4 +1,13 @@
 
+if (enemyDying) // do this for custom death animation
+{
+	ai0++;
+	if (ai0 > 20) {
+		instance_destroy();
+	}
+	return; // prevents rest of code from running	
+}
+
 if (speed = 0) 
 {
 	ai0 += 0.08 + random_range(0.03, 0.05);

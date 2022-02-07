@@ -3,7 +3,7 @@
 function placeTile(posX, posY, tileType){
 	if (!instance_place(posX, posY, tileType) && !instance_place(posX, posY, wg_goal)) 
 		{
-			instance_create_layer(posX, posY, "Instances", tileType);
+			instance_create_layer(posX, posY, "Floor", tileType);
 		}
 		/*
 	if (tileType == wg_wall)
@@ -42,7 +42,7 @@ function buildSquare(posX, posY, sizeX, sizeY = sizeX)
 		{
 			if (!instance_place(posX + (i * global.cellSize), posY + (i2 * global.cellSize), o_floor))
 			{
-				with (instance_create_layer(posX + (i * global.cellSize), posY + (i2 * global.cellSize), "Instances", o_floor))
+				with (instance_create_layer(posX + (i * global.cellSize), posY + (i2 * global.cellSize), "Floor", o_floor))
 				{
 					image_index = 2;
 				}

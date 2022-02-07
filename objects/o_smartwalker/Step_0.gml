@@ -20,7 +20,7 @@ for (var i = 0; i < 10; i++)
 	
 	if (!instance_position(x, y, o_floor))
 	{
-		instance_create_layer(x, y, "Instances", o_floor);
+		instance_create_layer(x, y, "Floor", o_floor);
 	}
 	
 	if (irandom(50) == 0) 

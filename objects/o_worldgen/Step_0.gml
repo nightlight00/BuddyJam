@@ -119,4 +119,46 @@ switch (worldgen_stage)
 		else {
 			worldgen_stage++; }
 		break;
+	case 8: // spawn enemies
+		for (var i = 0; i < 5; i++)
+		{	
+			// find a place to spawn them
+			with (irandom(instance_number(o_floor) - 1)) 
+			{
+				// check distance to nearest, dont want to spawn to close to eachother
+				var near = instance_nearest(x, y, o_enemy_parent);
+				if (distance_to_object(near) > 48) {
+					
+					var enem_list = ds_list_create();
+					for (var d = 0; d < 3; d++) { // add common enemies to list
+						if (global.enemyWeight > 0) { // cant be added if not enough space
+							ds_list_add(enem_list, o_enemy_spider.object_index);
+						}
+					}
+			
+					// shuffle list
+					ds_list_shuffle(enem_list);
+					var spawn = ds_list_find_value(enem_list, 0);
+			
+					// add weight to each enemy
+					switch (spawn) {
+						case o_enemy_spider:
+							global.enemyWeight--;
+							break;
+						default:
+							return;
+							break;
+					}
+			
+					if (spawn == noone) {
+						return; }
+			
+					instance_create_layer(x, y, "Instances", spawn);
+					ds_list_destroy(enem_list);
+				}
+			}
+		}
+		if (global.enemyWeight <= 0) {
+			worldgen_stage++; }
+		break;
 }
