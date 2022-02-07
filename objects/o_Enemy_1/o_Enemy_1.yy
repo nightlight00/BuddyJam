@@ -30,7 +30,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Enemy1",
-    "path": "folders/Enemies/Enemy1.yy",
+    "path": "folders/Entity/Enemies/Enemy1.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_Enemy_1",

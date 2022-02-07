@@ -33,6 +33,7 @@ for (var i = 0; i < 10; i++)
 		instance_destroy();
 	}
 	walker_lifetime--;
+	
 }
 if (walker_lifetime <= 0) {
 	instance_destroy(); }

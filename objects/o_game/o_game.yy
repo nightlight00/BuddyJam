@@ -24,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Systems",
-    "path": "folders/Systems.yy",
+    "name": "Control",
+    "path": "folders/Entity/Control.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_game",

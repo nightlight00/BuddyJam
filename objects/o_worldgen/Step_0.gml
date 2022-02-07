@@ -18,6 +18,7 @@ switch (worldgen_stage)
 			instance_create_layer(room_width / 2, room_height / 2, "Instances", o_walker);
 		}
 		worldgen_stage++;
+		
 		break;
 	case 2: // add some more tiles randomly
 		if (instance_exists(o_walker) || instance_exists(o_smartwalker)) {
@@ -52,6 +53,23 @@ switch (worldgen_stage)
 		worldgen_stage++;
 		break;
 	case 6: 
+							/////////////////////////////////////////////////////////
+		/////////////////////////////////////////////////////////
+		////// path code////////////////////////////////////////
+		
+		//get tiles in room
+		var _w = ceil(room_width / 16)
+		var _h = ceil(room_height / 16)
+		
+		//create motion planning grid
+		global.mp_grid = mp_grid_create(0,0, _w, _h, 16, 16);
+
+		//add solid instances to grid
+		mp_grid_add_instances(global.mp_grid, o_wall, true);
+		
+		///////////////////////////////////////////////////////////
+		//////////////////////////////////////////////////////////
+		
 	case 4: // add walls
 		with (o_floor)
 		{
@@ -63,8 +81,12 @@ switch (worldgen_stage)
 			placeWall(x + global.cellSize, y - global.cellSize);
 			placeWall(x + global.cellSize, y + global.cellSize);
 			placeWall(x - global.cellSize, y + global.cellSize);
+
 		}
+
+
 		worldgen_stage++;
+
 		break;
 	case 5: // destroy snigle walls
 		with (o_wall)
@@ -87,6 +109,9 @@ switch (worldgen_stage)
 			}
 		}
 		worldgen_stage++;
+		
+
+		
 		break;
 	case 7: // 6 is walls, add eggsacs
 		if (instance_number(o_egg) <= 4) {
@@ -158,7 +183,13 @@ switch (worldgen_stage)
 				}
 			}
 		}
+		
+
 		if (global.enemyWeight <= 0) {
-			worldgen_stage++; }
+			worldgen_stage++; 
+			
+			}
 		break;
+		
+		
 }

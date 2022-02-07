@@ -16,7 +16,7 @@ if (current_cooldown <= 0)
 			proj.image_angle = direction;
 			proj.speed = weap_velocity + random(i * (weap_velocity / 4));
 		}
-		shakescreen(5, 1.4);
+		shakescreen(3, 1.4);
 		
 		current_cooldown = weap_cooldown;
 	}
