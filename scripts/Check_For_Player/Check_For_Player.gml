@@ -9,6 +9,7 @@ function Check_For_Player(){
 		
 		//enemy is now alert
 		alert = true;
+		
 		speed = 1;
 		
 		

@@ -186,7 +186,7 @@ switch (worldgen_stage)
 					if (spawn == noone) {
 						return; }
 			
-					instance_create_layer(x, y, "Enemy", spawn);
+					instance_create_layer(x, y, "Instances", spawn);
 					ds_list_destroy(enem_list);
 				}
 			}

@@ -19,7 +19,7 @@ Idle = spidey_idle;
 //////////////////////////////////////////////////////
 
 //set spider speed
-speed = 1;
+speed = 0;
 
 //Set Spider Health
 MaxHp = 20;

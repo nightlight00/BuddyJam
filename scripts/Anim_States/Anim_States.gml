@@ -1,11 +1,12 @@
-//sets animation sprites to enemeys
+// Script assets have changed for v2.3.0 see
+// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function Anim_States(){
-
-	//is walking or in place
-	if speed > 0 {
+	if (speed > 0)
+	{
 		sprite_index = Walk;
 	}
-	else{
+	else
+	{
 		sprite_index = Idle;
 	}
 
