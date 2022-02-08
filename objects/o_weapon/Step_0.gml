@@ -14,7 +14,7 @@ if (current_cooldown <= 0)
 	{
 		for (var i = 0; i < weap_amount; i++)
 		{
-			var proj = instance_create_layer(x, y, "Instances", weap_proj)
+			var proj = instance_create_layer(x + lengthdir_x(sprite_width/2, direction), y - 4 + lengthdir_y(sprite_height/2, direction), "Instances", weap_proj)
 			proj.direction = direction + random_range(-weap_spread, weap_spread);
 			proj.image_angle = direction;
 			proj.speed = weap_velocity + random(i * (weap_velocity / 4));

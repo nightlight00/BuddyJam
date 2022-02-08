@@ -145,12 +145,20 @@ switch (worldgen_stage)
 			worldgen_stage++; }
 		break;
 	case 8: // spawn enemies
-		for (var i = 0; i < 5; i++)
-		{	
-			// find a place to spawn them
-			with (irandom(instance_number(o_floor) - 1)) 
-			{
-				// check distance to nearest, dont want to spawn to close to eachother
+	
+		with (o_floor)
+		{
+			var sides = 0;
+			if (instance_place(x - global.cellSize, y, o_floor)) { sides++; }
+			if (instance_place(x + global.cellSize, y, o_floor)) { sides++; }
+			if (instance_place(x, y + global.cellSize, o_floor)) { sides++; }
+			if (instance_place(x, y - global.cellSize, o_floor)) { sides++; }
+			if (instance_place(x - global.cellSize, y - global.cellSize, o_floor)) { sides++; }
+			if (instance_place(x + global.cellSize, y + global.cellSize, o_floor)) { sides++; }
+			if (instance_place(x - global.cellSize, y + global.cellSize, o_floor)) { sides++; }
+			if (instance_place(x + global.cellSize, y - global.cellSize, o_floor)) { sides++; }
+			
+			if (sides >= 5 && irandom(70) == 0) {
 				var near = instance_nearest(x, y, o_enemy_parent);
 				if (distance_to_object(near) > 48) {
 					
@@ -183,7 +191,6 @@ switch (worldgen_stage)
 				}
 			}
 		}
-		
 
 		if (global.enemyWeight <= 0) {
 			worldgen_stage++; 
