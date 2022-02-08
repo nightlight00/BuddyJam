@@ -53,7 +53,7 @@ switch (worldgen_stage)
 		worldgen_stage++;
 		break;
 	case 6: 
-							/////////////////////////////////////////////////////////
+		/////////////////////////////////////////////////////////
 		/////////////////////////////////////////////////////////
 		////// path code////////////////////////////////////////
 		
@@ -178,7 +178,7 @@ switch (worldgen_stage)
 					if (spawn == noone) {
 						return; }
 			
-					instance_create_layer(x, y, "Instances", spawn);
+					instance_create_layer(x, y, "Enemy", spawn);
 					ds_list_destroy(enem_list);
 				}
 			}
