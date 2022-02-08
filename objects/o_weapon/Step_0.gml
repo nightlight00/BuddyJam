@@ -22,6 +22,20 @@ if (current_cooldown <= 0)
 	}
 }
 
+switch (current_weap) {
+	case 2: // ar
+		if (current_cooldown == weap_cooldown-3 || current_cooldown == weap_cooldown-6) {
+			for (var i = 0; i < weap_amount; i++)
+			{
+				var proj = instance_create_layer(x, y, "Instances", weap_proj)
+				proj.direction = direction + random_range(-weap_spread, weap_spread);
+				proj.image_angle = direction;
+				proj.speed = weap_velocity + random(i * (weap_velocity / 4));
+			}
+		}
+		break;
+}
+
 current_cooldown--;
 if (last_weap != current_weap) {
 	swapWeap(current_weap);

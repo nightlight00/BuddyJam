@@ -1,5 +1,5 @@
 image_angle = direction;
-if (collision_point(x, y, o_wall, true, true)) {
+if (collision_point(x, y, o_wall, true, true)) || (penetrate == 0) || (lifetime <= 0) {
 	instance_destroy(); }
-if (penetrate == 0) {
-	instance_destroy(); }
+lifetime--;
+	

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "s_testp",
-    "path": "sprites/s_testp/s_testp.yy",
+    "name": "s_test",
+    "path": "sprites/s_test/s_test.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,13 +24,16 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"maxhitpoints","path":"objects/o_enemy_parent/o_enemy_parent.yy",},"objectId":{"name":"o_enemy_parent","path":"objects/o_enemy_parent/o_enemy_parent.yy",},"value":"18","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
   "parent": {
-    "name": "Enemy1",
-    "path": "folders/Entity/Enemies/Enemy1.yy",
+    "name": "Spider",
+    "path": "folders/Enemies/Spider.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_Enemy_1",

@@ -8,3 +8,5 @@ if (abs(speed) < 0.5)
 {
 	instance_destroy();
 }
+
+createDust(1, x + random_range(-2, 3), y + random_range(-2, 3));

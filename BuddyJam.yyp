@@ -7,7 +7,7 @@
     {"id":{"name":"o_dusts","path":"objects/o_dusts/o_dusts.yy",},"order":0,},
     {"id":{"name":"walker","path":"objects/walker/walker.yy",},"order":6,},
     {"id":{"name":"o_worldgen","path":"objects/o_worldgen/o_worldgen.yy",},"order":0,},
-    {"id":{"name":"o_enemy_spider","path":"objects/o_enemy_spider/o_enemy_spider.yy",},"order":0,},
+    {"id":{"name":"o_Enemy_1","path":"objects/o_Enemy_1/o_Enemy_1.yy",},"order":0,},
     {"id":{"name":"smartwalker","path":"objects/smartwalker/smartwalker.yy",},"order":8,},
     {"id":{"name":"o_egg","path":"objects/o_egg/o_egg.yy",},"order":4,},
     {"id":{"name":"o_eProj","path":"objects/o_eProj/o_eProj.yy",},"order":0,},

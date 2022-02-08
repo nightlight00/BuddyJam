@@ -3,7 +3,7 @@ if (image_xscale > 1.7)
 {
 	with (other)
 	{
-		instance_create_layer(x, y,  "Instances", o_floor);
+		instance_create_layer(x, y,  "Floor", o_floor);
 		placeWall(x - global.cellSize, y);
 		placeWall(x + global.cellSize, y);
 		placeWall(x, y + global.cellSize);
