@@ -3,7 +3,7 @@
     "name": "s_tiles",
     "path": "sprites/s_tiles/s_tiles.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
