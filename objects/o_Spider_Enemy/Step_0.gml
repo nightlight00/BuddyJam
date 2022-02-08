@@ -1,23 +1,15 @@
 Check_For_Player();
+Anim_States();
 
-//set enemy speed
-if (spd == 1)
+//if enemy loses sight of player set speed to 0
+if (speed > 0)
 {
 	if(alert == false)
 	{
 		path_end();
-		spd = 0
+		speed = 0
 	}
 }
-
-
-//animation handle
-if spd > 0 {
-		sprite_index = spidey_walk;
-	}
-	else{
-		sprite_index = spidey_idle;
-	}
 
 //set collision
 var box = bbox_right;

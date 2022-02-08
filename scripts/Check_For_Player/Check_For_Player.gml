@@ -9,8 +9,8 @@ function Check_For_Player(){
 		
 		//enemy is now alert
 		alert = true;
+		speed = 1;
 		
-		spd = 1;
 		
 		//should we calc our path?
 		if calc_path_timer-- <= 0 {
@@ -22,7 +22,7 @@ function Check_For_Player(){
 	
 			//start path if we can reach the player
 			if _found_player {
-				path_start(path, spd, path_action_stop, false);
+				path_start(path, speed, path_action_stop, false);
 			}
 		}
 	}
