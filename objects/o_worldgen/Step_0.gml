@@ -9,7 +9,7 @@ switch (worldgen_stage)
 		buildSquare((room_width / 2) + (portalX * global.cellSize), (room_height / 2) + (portalY * global.cellSize), 3);
 
 		instance_create_layer((room_width / 2) + (portalX * global.cellSize), (room_height / 2) + (portalY * global.cellSize), "Instances", o_smartwalker);
-		
+		instance_create_layer((room_width / 2) + (portalX * global.cellSize), (room_height / 2) + (portalY * global.cellSize), "Instances", o_goal);
 		worldgen_stage++;
 		break;
 	case 1: // spawn 3 walkers

@@ -1,3 +1,1 @@
-//hello
-other.penetrate--;
-instance_destroy(self);
+instance_destroy();
