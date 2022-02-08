@@ -82,7 +82,7 @@
     {"folderPath":"folders/Pickups.yy","order":27,"resourceVersion":"1.0","name":"Pickups","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Dusts.yy","order":28,"resourceVersion":"1.0","name":"Dusts","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Player/Weapons/Projectiles/pSprites.yy","order":2,"resourceVersion":"1.0","name":"pSprites","tags":[],"resourceType":"GMFolder",},
-    {"folderPath":"folders/Dusts/Entity.yy","order":3,"resourceVersion":"1.0","name":"Entity","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Enemies/Entity.yy","order":3,"resourceVersion":"1.0","name":"Entity","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
