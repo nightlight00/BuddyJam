@@ -8,6 +8,6 @@ function Check_For_Player(){
 	
 	//start path if we can reach the player
 	if _found_player {
-		path_start(path, spd, path_action_stop, false);
+		path_start(path, 1, path_action_stop, false);
 	}
 }
