@@ -26,13 +26,13 @@ switch (worldgen_stage)
 		with (o_floor)
 		{
 			if (!instance_place(x + global.cellSize, y, o_floor) && irandom(45) == 0) {
-				instance_create_layer(x + global.cellSize, y, "Instances", o_floor); }
+				instance_create_layer(x + global.cellSize, y, "Floor", o_floor); }
 			if (!instance_place(x - global.cellSize, y, o_floor) && irandom(45) == 0) {
-				instance_create_layer(x - global.cellSize, y, "Instances", o_floor); }
+				instance_create_layer(x - global.cellSize, y, "Floor", o_floor); }
 			if (!instance_place(x, y + global.cellSize, o_floor) && irandom(45) == 0) {
-				instance_create_layer(x, y + global.cellSize, "Instances", o_floor); }
+				instance_create_layer(x, y + global.cellSize, "Floor", o_floor); }
 			if (!instance_place(x, y - global.cellSize, o_floor) && irandom(45) == 0) {
-				instance_create_layer(x, y - global.cellSize, "Instances", o_floor); }
+				instance_create_layer(x, y - global.cellSize, "Floor", o_floor); }
 		}
 		worldgen_stage++;
 		break;

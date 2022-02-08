@@ -22,7 +22,7 @@ ds_map_add(playerWeapons[1], "weap_damage", 0.65);
 ds_map_add(playerWeapons[1], "weap_auto", false);
 //ds_map_add(playerWeapons[0], "weap_
 }
-{ /* AR - 0 */
+{ /* AR - 2 */
 playerWeapons[2] = ds_map_create();
 ds_map_add(playerWeapons[2], "weap_sprite", s_test);
 ds_map_add(playerWeapons[2], "weap_proj", o_plasma_bullet);
@@ -35,12 +35,11 @@ ds_map_add(playerWeapons[2], "weap_auto", true);
 //ds_map_add(playerWeapons[0], "weap_
 }
 
-current_weap = 1;
+current_weap = 0;
 swapWeap(current_weap);
 last_weap = current_weap;
 
-image_xscale = 0.5;
-image_yscale = 0.25;
-image_blend = c_gray;
+image_speed = 0;
+image_index = current_weap;
 
 current_cooldown = 0;
