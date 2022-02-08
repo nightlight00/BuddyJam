@@ -10,7 +10,10 @@
     "path": "sprites/spidey_idle/spidey_idle.yy",
   },
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "o_enemy_parent",
+    "path": "objects/o_enemy_parent/o_enemy_parent.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
