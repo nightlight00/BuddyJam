@@ -9,7 +9,9 @@ direction = point_direction(o_player.x, o_player.y, mouse_x, mouse_y);
 image_angle = direction;
 
 if (current_cooldown <= 0)
-{
+{	
+	if (current_weap == 0 && instance_exists(o_plasma_laser)) {
+		return; }
 	if ((weap_auto && device_mouse_check_button(0, mb_left)) || device_mouse_check_button_pressed(0, mb_left))
 	{
 		for (var i = 0; i < weap_amount; i++)

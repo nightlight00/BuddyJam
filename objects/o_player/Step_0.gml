@@ -1,4 +1,6 @@
 
+global.playerImmuneFrames--;
+
 #region Movement
 
 if (keyboard_check(ord("A")) || keyboard_check(ord("D")))
@@ -38,5 +40,15 @@ box = bbox_top;
 if (vspeed > 0) { box = bbox_bottom; }
 if (collision_point(bbox_right, box + vspeed, o_wall, false, true) || collision_point(bbox_left, box + vspeed, o_wall, false, true)) {
 	vspeed = 0; }
+
+if (abs(speed) > 0.01)
+{
+	createDust(2, random_range(bbox_left, bbox_right), bbox_bottom, -speed/3);
+	sprite_index = s_player_walk;
+}
+else {
+	sprite_index = s_player_idle;
+}
+
 
 #endregion

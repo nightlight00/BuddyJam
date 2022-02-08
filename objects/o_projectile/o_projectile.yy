@@ -1,15 +1,15 @@
 {
   "spriteId": {
-    "name": "s_bullets",
-    "path": "sprites/s_bullets/s_bullets.yy",
+    "name": "s_bullets_1",
+    "path": "sprites/s_bullets_1/s_bullets_1.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "o_depthhelper",
-    "path": "objects/o_depthhelper/o_depthhelper.yy",
+    "name": "o_depthhelper_1",
+    "path": "objects/o_depthhelper_1/o_depthhelper_1.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
