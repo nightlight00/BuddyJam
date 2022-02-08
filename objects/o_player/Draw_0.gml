@@ -6,17 +6,14 @@ else {
 	image_xscale = 1;
 }
 
-// player flashes when has immune frames
-if (global.playerImmuneFrames < 0 || global.playerImmuneFrames mod 3 == 0) {
-	if (dir >= 180) {
-		draw_self();
-		drawn = true;
-	}
+if (dir >= 180) {
+	draw_self();
+	drawn = true;
+}
 
-	draw_sprite_ext(o_weapon.sprite_index, o_weapon.image_index, x + lengthdir_x(2, dir), 
-		y - 4 + lengthdir_y(1, dir), 1, image_xscale, dir, c_white, 1);
+draw_sprite_ext(o_weapon.sprite_index, o_weapon.image_index, x + lengthdir_x(2, dir), 
+y - 4 + lengthdir_y(1, dir), 1, image_xscale, dir, c_white, 1);
 
-	if (!drawn) {
-		draw_self();
-	}
+if (!drawn) {
+	draw_self();
 }
