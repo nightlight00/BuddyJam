@@ -3,17 +3,17 @@
 
 // enemy level is stored in o_game
 for (var i = 0; i < global.enemyLevel; i++) {
-	maxhitpoints *= 1.8; }
+	MaxHp *= global.enemyLevel;
+	}
 
-hitpoints = maxhitpoints;
+Hp = MaxHp;
+
+image_xscale = 4;
+
+image_yscale = image_xscale;
+
 	
 enemyDying = false;
 
-//are we chasing the player?
-alert = false;
 
-//distance to start chasing the player
-alert_dis = 100;
 
-//create path resource
-path = path_add();

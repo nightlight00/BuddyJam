@@ -32,6 +32,7 @@
     {"id":{"name":"pistol","path":"sprites/pistol/pistol.yy",},"order":2,},
     {"id":{"name":"swapWeap","path":"scripts/swapWeap/swapWeap.yy",},"order":2,},
     {"id":{"name":"s_bullets","path":"sprites/s_bullets/s_bullets.yy",},"order":1,},
+    {"id":{"name":"Check_For_Player","path":"scripts/Check_For_Player/Check_For_Player.yy",},"order":0,},
     {"id":{"name":"s_laser","path":"sprites/s_laser/s_laser.yy",},"order":2,},
     {"id":{"name":"shakescreen","path":"scripts/shakescreen/shakescreen.yy",},"order":4,},
     {"id":{"name":"o_player_sprite","path":"sprites/o_player_sprite/o_player_sprite.yy",},"order":1,},
@@ -83,6 +84,7 @@
     {"folderPath":"folders/Dusts.yy","order":28,"resourceVersion":"1.0","name":"Dusts","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Player/Weapons/Projectiles/pSprites.yy","order":2,"resourceVersion":"1.0","name":"pSprites","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Enemies/Entity.yy","order":3,"resourceVersion":"1.0","name":"Entity","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Scripts.yy","order":29,"resourceVersion":"1.0","name":"Scripts","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
