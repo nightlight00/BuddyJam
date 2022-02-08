@@ -1,3 +1,4 @@
+
 switch (dust_style) {
 	case 1: //plasma dusts
 		image_angle += speed * 4;

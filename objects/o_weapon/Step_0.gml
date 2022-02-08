@@ -40,4 +40,5 @@ current_cooldown--;
 if (last_weap != current_weap) {
 	swapWeap(current_weap);
 	last_weap = current_weap;
+	image_index = current_weap;
 }
