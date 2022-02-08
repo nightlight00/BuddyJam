@@ -1,1 +1,0 @@
-drawTimer = 60;

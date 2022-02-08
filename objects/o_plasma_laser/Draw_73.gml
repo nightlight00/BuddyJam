@@ -1,1 +1,1 @@
-draw_sprite_ext(sprite_index, 0, xstart, ystart, 10, 1, direction, c_white, 1);
+draw_sprite_ext(sprite_index, 0, xstart, ystart, 5, 1, direction, c_white, 1);

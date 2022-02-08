@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "s_player_arm",
-    "path": "sprites/s_player_arm/s_player_arm.yy",
+    "name": "o_player_arm",
+    "path": "sprites/o_player_arm/o_player_arm.yy",
   },
   "solid": false,
   "visible": true,
