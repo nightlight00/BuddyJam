@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "spidey_walk",
-    "path": "sprites/spidey_walk/spidey_walk.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": {

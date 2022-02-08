@@ -1,7 +1,7 @@
 //set spider scale
 image_xscale = 0.5;
 image_yscale = image_xscale;
-
+image_blend = choose(noone, c_orange);
 
 				//Spider Animations
 ///////////////////////////////////////////////////////
