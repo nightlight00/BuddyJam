@@ -1,19 +1,10 @@
 {
-  "spriteId": {
-    "name": "spidey_idle",
-    "path": "sprites/spidey_idle/spidey_idle.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
-  "spriteMaskId": {
-    "name": "spidey_idle",
-    "path": "sprites/spidey_idle/spidey_idle.yy",
-  },
+  "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "o_enemy_parent",
-    "path": "objects/o_enemy_parent/o_enemy_parent.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -31,7 +22,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Entity",
-    "path": "folders/Enemies/Entity.yy",
+    "path": "folders/Dusts/Entity.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_Spider_Enemy",

@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"o_depthsorter","path":"objects/o_depthsorter/o_depthsorter.yy",},"order":1,},
+    {"id":{"name":"spidey_walk","path":"sprites/spidey_walk/spidey_walk.yy",},"order":1,},
     {"id":{"name":"o_pickup_parent","path":"objects/o_pickup_parent/o_pickup_parent.yy",},"order":2,},
     {"id":{"name":"s_shells","path":"sprites/s_shells/s_shells.yy",},"order":0,},
     {"id":{"name":"o_dusts","path":"objects/o_dusts/o_dusts.yy",},"order":0,},
@@ -9,6 +10,7 @@
     {"id":{"name":"o_egg","path":"objects/o_egg/o_egg.yy",},"order":4,},
     {"id":{"name":"o_eProj","path":"objects/o_eProj/o_eProj.yy",},"order":0,},
     {"id":{"name":"o_walker","path":"objects/o_walker/o_walker.yy",},"order":1,},
+    {"id":{"name":"o_Spider_Enemy","path":"objects/o_Spider_Enemy/o_Spider_Enemy.yy",},"order":0,},
     {"id":{"name":"o_depthhelper","path":"objects/o_depthhelper/o_depthhelper.yy",},"order":0,},
     {"id":{"name":"o_battery","path":"objects/o_battery/o_battery.yy",},"order":0,},
     {"id":{"name":"o_camera","path":"objects/o_camera/o_camera.yy",},"order":2,},
@@ -40,6 +42,7 @@
     {"id":{"name":"o_enemy_parent","path":"objects/o_enemy_parent/o_enemy_parent.yy",},"order":0,},
     {"id":{"name":"o_plasma_laser","path":"objects/o_plasma_laser/o_plasma_laser.yy",},"order":4,},
     {"id":{"name":"createDust","path":"scripts/createDust/createDust.yy",},"order":2,},
+    {"id":{"name":"spidey_idle","path":"sprites/spidey_idle/spidey_idle.yy",},"order":2,},
     {"id":{"name":"f_font","path":"fonts/f_font/f_font.yy",},"order":15,},
   ],
   "Options": [
@@ -79,6 +82,7 @@
     {"folderPath":"folders/Pickups.yy","order":27,"resourceVersion":"1.0","name":"Pickups","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Dusts.yy","order":28,"resourceVersion":"1.0","name":"Dusts","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Player/Weapons/Projectiles/pSprites.yy","order":2,"resourceVersion":"1.0","name":"pSprites","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Dusts/Entity.yy","order":3,"resourceVersion":"1.0","name":"Entity","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
