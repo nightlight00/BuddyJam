@@ -35,7 +35,7 @@ ds_map_add(playerWeapons[2], "weap_auto", true);
 //ds_map_add(playerWeapons[0], "weap_
 }
 
-current_weap = 0;
+current_weap = 1;
 swapWeap(current_weap);
 last_weap = current_weap;
 
