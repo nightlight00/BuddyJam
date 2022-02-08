@@ -1,7 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function placeTile(posX, posY, tileType){
-	if (!instance_place(posX, posY, tileType) && !instance_place(posX, posY, wg_goal)) 
+	if (!instance_place(posX, posY, tileType)) 
 		{
 			instance_create_layer(posX, posY, "Floor", tileType);
 		}
