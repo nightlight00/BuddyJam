@@ -8,6 +8,8 @@ if (enemyDying) // do this for custom death animation
 	return; // prevents rest of code from running	
 }
 
+CheckForPlayer();
+
 if (speed = 0) 
 {
 	ai0 += 0.08 + random_range(0.03, 0.05);

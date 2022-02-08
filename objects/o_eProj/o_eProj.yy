@@ -29,7 +29,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "eProjectiles",
-    "path": "folders/Entity/Enemies/eProjectiles.yy",
+    "path": "folders/Enemies/eProjectiles.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_eProj",

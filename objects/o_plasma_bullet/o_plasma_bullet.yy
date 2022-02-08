@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "s_shells",
-    "path": "sprites/s_shells/s_shells.yy",
+    "name": "s_bullets",
+    "path": "sprites/s_bullets/s_bullets.yy",
   },
   "solid": false,
   "visible": true,
@@ -37,7 +37,7 @@
     "path": "folders/Player/Weapons/Projectiles.yy",
   },
   "resourceVersion": "1.0",
-  "name": "o_plasma_shell",
+  "name": "o_plasma_bullet",
   "tags": [],
   "resourceType": "GMObject",
 }

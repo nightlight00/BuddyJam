@@ -33,7 +33,7 @@
   ],
   "parent": {
     "name": "Spider",
-    "path": "folders/Entity/Enemies/Spider.yy",
+    "path": "folders/Enemies/Spider.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_enemy_spider",

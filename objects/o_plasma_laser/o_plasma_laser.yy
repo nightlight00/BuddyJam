@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "s_shells",
-    "path": "sprites/s_shells/s_shells.yy",
+    "name": "s_laser",
+    "path": "sprites/s_laser/s_laser.yy",
   },
   "solid": false,
   "visible": true,
@@ -27,17 +27,16 @@
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":1,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":73,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
-  "overriddenProperties": [
-    {"propertyId":{"name":"lifetime","path":"objects/o_projectile/o_projectile.yy",},"objectId":{"name":"o_projectile","path":"objects/o_projectile/o_projectile.yy",},"value":"120","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-  ],
+  "overriddenProperties": [],
   "parent": {
     "name": "Projectiles",
     "path": "folders/Player/Weapons/Projectiles.yy",
   },
   "resourceVersion": "1.0",
-  "name": "o_plasma_shell",
+  "name": "o_plasma_laser",
   "tags": [],
   "resourceType": "GMObject",
 }
