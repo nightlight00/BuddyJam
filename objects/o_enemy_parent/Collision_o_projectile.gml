@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if (Hp >= 0)
+if (Hp <= 0)
 {
 	instance_destroy();
 }
