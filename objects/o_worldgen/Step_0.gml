@@ -157,7 +157,7 @@ switch (worldgen_stage)
 					var enem_list = ds_list_create();
 					for (var d = 0; d < 3; d++) { // add common enemies to list
 						if (global.enemyWeight > 0) { // cant be added if not enough space
-							ds_list_add(enem_list, o_Spider_Enemy.object_index);
+							ds_list_add(enem_list, o_Enemy_1.object_index);
 						}
 					}
 			
@@ -167,7 +167,7 @@ switch (worldgen_stage)
 			
 					// add weight to each enemy
 					switch (spawn) {
-						case o_Spider_Enemy:
+						case o_Enemy_1:
 							global.enemyWeight--;
 							break;
 						default:
