@@ -1,4 +1,6 @@
 
+global.playerImmuneFrames--;
+
 #region Movement
 
 if (keyboard_check(ord("A")) || keyboard_check(ord("D")))
@@ -29,6 +31,11 @@ else
 }
 hspeed = clamp(hspeed, -speed_max, speed_max);
 vspeed = clamp(vspeed, -speed_max, speed_max);
+
+if (abs((hspeed + vspeed) / 2) > 0.15)
+{
+	createDust(2, random_range(bbox_left, bbox_right), bbox_bottom, -speed/3);
+}
 
 var box = bbox_right;
 if (hspeed < 0) { box = bbox_left; }
