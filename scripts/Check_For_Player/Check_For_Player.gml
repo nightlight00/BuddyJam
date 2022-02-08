@@ -1,5 +1,6 @@
 
 function Check_For_Player(){
+	
 	//check if the player is close enough to start chasing
 	var _dis = distance_to_object(o_player);
 	
@@ -30,6 +31,6 @@ function Check_For_Player(){
 		if _dis <= attack_dis{
 			path_end();
 		}
-		spd = 0;
+		
 	}
 }
