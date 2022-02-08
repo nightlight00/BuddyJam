@@ -1,0 +1,2 @@
+/// @description 
+drawTimer = 60;

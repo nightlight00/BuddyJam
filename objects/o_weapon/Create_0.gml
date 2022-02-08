@@ -18,7 +18,7 @@ ds_map_add(playerWeapons[1], "weap_cooldown", 32);
 ds_map_add(playerWeapons[1], "weap_spread", 20);
 ds_map_add(playerWeapons[1], "weap_velocity", 5);
 ds_map_add(playerWeapons[1], "weap_amount", 7);
-ds_map_add(playerWeapons[1], "weap_damage", 0.65);
+ds_map_add(playerWeapons[1], "weap_damage", 0.57);
 ds_map_add(playerWeapons[1], "weap_auto", false);
 //ds_map_add(playerWeapons[0], "weap_
 }
@@ -35,7 +35,7 @@ ds_map_add(playerWeapons[2], "weap_auto", true);
 //ds_map_add(playerWeapons[0], "weap_
 }
 
-current_weap = 1;
+current_weap = 0;
 swapWeap(current_weap);
 last_weap = current_weap;
 

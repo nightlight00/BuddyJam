@@ -1,16 +1,16 @@
 {
   "spriteId": {
-    "name": "o_player_sprite",
-    "path": "sprites/o_player_sprite/o_player_sprite.yy",
+    "name": "s_player_sprite",
+    "path": "sprites/s_player_sprite/s_player_sprite.yy",
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
-  "persistent": true,
-  "parentObjectId": {
-    "name": "o_depthhelper",
-    "path": "objects/o_depthhelper/o_depthhelper.yy",
+  "spriteMaskId": {
+    "name": "s_player_sprite",
+    "path": "sprites/s_player_sprite/s_player_sprite.yy",
   },
+  "persistent": true,
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,

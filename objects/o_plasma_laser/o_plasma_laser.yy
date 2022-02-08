@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "s_laser",
-    "path": "sprites/s_laser/s_laser.yy",
+    "name": "s_laser_1",
+    "path": "sprites/s_laser_1/s_laser_1.yy",
   },
   "solid": false,
   "visible": true,
@@ -27,10 +27,11 @@
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":1,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":73,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"penetrate","path":"objects/o_projectile/o_projectile.yy",},"objectId":{"name":"o_projectile","path":"objects/o_projectile/o_projectile.yy",},"value":"-1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
   "parent": {
     "name": "Projectiles",
     "path": "folders/Player/Weapons/Projectiles.yy",
