@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spidey_idle",
-    "path": "sprites/spidey_idle/spidey_idle.yy",
+    "name": "spidey_walk",
+    "path": "sprites/spidey_walk/spidey_walk.yy",
   },
   "solid": false,
   "visible": true,
