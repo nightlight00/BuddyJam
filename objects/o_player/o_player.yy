@@ -10,10 +10,7 @@
     "path": "sprites/s_player_sprite/s_player_sprite.yy",
   },
   "persistent": true,
-  "parentObjectId": {
-    "name": "o_depthhelper_2",
-    "path": "objects/o_depthhelper_2/o_depthhelper_2.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
