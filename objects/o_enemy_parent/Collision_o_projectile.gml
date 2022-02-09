@@ -21,11 +21,16 @@ else
 			sprite_index = hurt;
 			Damage_cd = 5;
 		}
+		
+		if(speed >= 0)
+		{
+			speed -= 0.1
+		}
 
 		image_xscale += sqrt(other.proj_damage) / 10;
 		image_yscale = image_xscale;
 
-		Hp -= clamp(1, sqrt(sqrt(MaxHp)), sqrt(MaxHp) - image_xscale); 
+		Hp -= clamp(sqrt(MaxHp) - image_xscale, sqrt(sqrt(MaxHp)), 1); 
 	}
 }
 

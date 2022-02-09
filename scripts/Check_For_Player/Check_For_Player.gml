@@ -10,7 +10,8 @@ function Check_For_Player(){
 		//enemy is now alert
 		alert = true;
 		
-		speed = 1;
+		
+		speed = localspd;
 		
 		
 		//should we calc our path?

@@ -11,7 +11,11 @@ if (speed > 0)
 		path_end();
 		speed = 0
 	}
+	
 }
+
+
+/////////////////////////////////////////////////////////
 
 //set collision
 var box = bbox_right;
@@ -26,6 +30,8 @@ if (collision_point(bbox_right, box + vspeed, o_wall, false, true) || collision_
 if(distance_to_object(o_player)>= 400){
 	alert = false;
 }
+
+
 
 ////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////
@@ -49,10 +55,14 @@ if(distance_to_object(o_player)>= 400){
 		{
 			instance_destroy();
 		}
-		
+			
 			image_xscale += 0.01;
 			image_yscale = image_xscale;
 			Hp -= 0.1
+			
+
+			localspd = clamp(localspd - 0.01, 0.10, 2);
+				
 		}
 		
 		

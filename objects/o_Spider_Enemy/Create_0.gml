@@ -32,13 +32,13 @@ Damage_cd = 5;
 enemydamage = global.enemyLevel * 5;
 
 //set spider speed
-speed = 0;
+localspd = 2;
 
 //are we chasing the player?
 alert = false;
 
 //distance to start chasing the player
-alert_dis = 300;
+alert_dis = 200;
 
 //attack distance
 attack_dis = 50;
