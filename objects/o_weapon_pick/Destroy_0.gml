@@ -4,6 +4,8 @@ switch (holding) {
 	case 0: text.item_name = "pistol!"; break;
 	case 1: text.item_name = "shotgun!"; break;
 	case 2: text.item_name = "machinegun!"; break;
+	case 3: text.item_name = "railgun!"; break;
+	case 4: text.item_name = "launcher!"; break;
 }
 var replace = instance_create_layer(x, y, "Instances", o_weapon_pick);
 replace.holding = o_weapon.current_weap;

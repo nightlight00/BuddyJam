@@ -12,4 +12,7 @@ if (holding = -1)
 	ds_list_shuffle(weapon_type);
 	holding = ds_list_find_value(weapon_type, 0);
 	ds_list_destroy(weapon_type);
+
 }
+image_index = holding;
+image_speed = 0;
