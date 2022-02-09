@@ -55,19 +55,16 @@ if (PathCoolDown-- <= 0)
 		/////////////////////////////////////////////////////////
 		////// path code////////////////////////////////////////
 		
-		//get tiles in room
-		var _w = ceil(room_width / 16)
-		var _h = ceil(room_height / 16)
 		
 		//create motion planning grid
-		global.mp_grid = mp_grid_create(x - 300, y - 300, _w, _h, 16, 16);
+		global.mp_grid = mp_grid_create(x - 300, y - 300, room_width / 32, room_height /32, 16, 16);
 
 		//add solid instances to grid
 		mp_grid_add_instances(global.mp_grid, o_wall, true);
 		
 		///////////////////////////////////////////////////////////
 		//////////////////////////////////////////////////////////
-		PathCoolDown = 140;
+		PathCoolDown = 100;
 }
 
 if(global.playerHealth <= 0)
