@@ -15,25 +15,15 @@ function Anim_States(){
 	//Attack
 	if (distance_to_object(o_player) <= attack_dis)
 	{
+		In_Range = true;
 		sprite_index = charge;
-		
-		image_xscale += 0.01;
-		image_yscale += 0.01;
-		
-		if (image_yscale >= 2)
-		{ 
-			global.playerHealth -= global.enemyLevel / distance_to_object(o_player)+1;
-			instance_destroy();
-		
-		}
 	}
-	
-	if (distance_to_object(o_player) > attack_dis){
-		if(image_xscale >= 0.5)
+	else{
+		if (In_Range == true)
 		{
-			image_xscale -= 0.01;
-			image_yscale = image_xscale;
+			In_Range = false;
 		}
+		return
 	}
 
 }

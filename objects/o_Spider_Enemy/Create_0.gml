@@ -1,7 +1,8 @@
 //set spider scale
-
 image_xscale = 0.5;
 image_yscale = image_xscale;
+
+//spider color
 image_blend = choose(noone, c_orange);
 
 				//Spider Animations
@@ -20,14 +21,18 @@ charge = spidey_charge;
 ///////////////////////////////////////////////////////
 //////////////////////////////////////////////////////
 
+
+MaxHp += 10 * global.enemyLevel / 5;
+
+Hp = MaxHp;
+
 //damage cool down
 Damage_cd = 5;
 
+enemydamage = global.enemyLevel * 5;
+
 //set spider speed
 speed = 0;
-
-//Set Spider Health
-MaxHp = 20;
 
 //are we chasing the player?
 alert = false;
@@ -46,6 +51,8 @@ calc_path_delay = 10;
 
 //set a to,er fpr wjem we calc a path
 calc_path_timer = irandom(30);
+
+In_Range = false;
 
 
 

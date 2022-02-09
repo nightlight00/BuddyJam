@@ -5,7 +5,6 @@ if (Hp <= 0)
 }
 
 //takes away enemys hp
-Hp -= other.proj_damage;
 other.penetrate -= 1;
 
 //changes sprite image
@@ -16,7 +15,8 @@ if (Damage_cd-- <= 0)
 	Damage_cd = 5;
 }
 
-image_xscale += other.proj_damage / 10;
-
+image_xscale += sqrt(other.proj_damage) / 10;
 image_yscale = image_xscale;
+
+Hp -= clamp(1, sqrt(sqrt(MaxHp)), sqrt(MaxHp) - image_xscale); 
 
