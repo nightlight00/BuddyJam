@@ -1,6 +1,8 @@
 Check_For_Player();
 Anim_States();
 
+
+
 //if enemy loses sight of player set speed to 0
 if (speed > 0)
 {
