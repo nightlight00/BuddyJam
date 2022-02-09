@@ -29,7 +29,9 @@
     {"isDnD":false,"eventNum":0,"eventType":1,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"lifetime","path":"objects/o_projectile/o_projectile.yy",},"objectId":{"name":"o_projectile","path":"objects/o_projectile/o_projectile.yy",},"value":"120","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
   "parent": {
     "name": "Projectiles",
     "path": "folders/Player/Weapons/Projectiles.yy",

@@ -4,7 +4,7 @@
 // Inherit the parent event
 event_inherited();
 
-speed *= 0.97;
+speed *= 0.98;
 if (abs(speed) < 0.8) 
 {
 	instance_destroy();

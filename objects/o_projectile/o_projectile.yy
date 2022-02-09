@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "s_bullets_1",
-    "path": "sprites/s_bullets_1/s_bullets_1.yy",
+    "name": "s_bullets",
+    "path": "sprites/s_bullets/s_bullets.yy",
   },
   "solid": false,
   "visible": true,
@@ -27,7 +27,7 @@
   ],
   "properties": [
     {"varType":1,"value":"1","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"penetrate","tags":[],"resourceType":"GMObjectProperty",},
-    {"varType":0,"value":"10","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"lifetime","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":0,"value":"120","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"lifetime","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":0,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"proj_damage","tags":[],"resourceType":"GMObjectProperty",},
   ],
   "overriddenProperties": [],
