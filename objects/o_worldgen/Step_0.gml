@@ -53,22 +53,6 @@ switch (worldgen_stage)
 		worldgen_stage++;
 		break;
 	case 6: 
-		/////////////////////////////////////////////////////////
-		/////////////////////////////////////////////////////////
-		////// path code////////////////////////////////////////
-		
-		//get tiles in room
-		var _w = ceil(room_width / 16)
-		var _h = ceil(room_height / 16)
-		
-		//create motion planning grid
-		global.mp_grid = mp_grid_create(0,0, _w, _h, 16, 16);
-
-		//add solid instances to grid
-		mp_grid_add_instances(global.mp_grid, o_wall, true);
-		
-		///////////////////////////////////////////////////////////
-		//////////////////////////////////////////////////////////
 		
 	case 4: // add walls
 		with (o_floor)

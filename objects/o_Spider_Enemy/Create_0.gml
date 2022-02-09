@@ -1,4 +1,5 @@
 //set spider scale
+
 image_xscale = 0.5;
 image_yscale = image_xscale;
 image_blend = choose(noone, c_orange);
@@ -11,6 +12,7 @@ image_blend = choose(noone, c_orange);
 hurt = spidey_hurt;
 Walk = spidey_walk;
 Idle = spidey_idle;
+charge = spidey_charge;
 
 
 
@@ -18,6 +20,7 @@ Idle = spidey_idle;
 ///////////////////////////////////////////////////////
 //////////////////////////////////////////////////////
 
+//damage cool down
 Damage_cd = 5;
 
 //set spider speed
@@ -33,7 +36,7 @@ alert = false;
 alert_dis = 300;
 
 //attack distance
-attack_dis = 6;
+attack_dis = 50;
 
 //create path resource
 path = path_add();
@@ -43,4 +46,6 @@ calc_path_delay = 10;
 
 //set a to,er fpr wjem we calc a path
 calc_path_timer = irandom(30);
+
+
 

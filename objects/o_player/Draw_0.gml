@@ -23,4 +23,9 @@ if (global.playerImmuneFrames < 0 || global.playerImmuneFrames mod 3 == 0) {
 		draw_self();
 	}
 }
+
+if keyboard_check(ord("C")) {
+	
+	mp_grid_draw(global.mp_grid);
+}
 		
