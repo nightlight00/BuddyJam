@@ -22,6 +22,8 @@ charge = spidey_charge;
 //////////////////////////////////////////////////////
 
 
+
+
 MaxHp += 10 * global.enemyLevel / 5;
 
 Hp = MaxHp;

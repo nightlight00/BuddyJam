@@ -43,10 +43,22 @@ if(distance_to_object(o_player)>= 400){
 		//if image is scaled up to 2 or more
 		if (image_yscale >= 2)
 		{ 
-
-			//damage player
-			global.playerHealth -= enemydamage / distance_to_object(o_player);
+			if (global.immuneframes > 0) 
+			{ 
+				
+			}
+			else 
+			{ 
+				
+				global.immuneframess = global.playerImmuneFramesReset;
+				
+					//damage player
+				global.playerHealth -= enemydamage / distance_to_object(o_player);
+				 
+			}
 			instance_destroy();
+		
+			
 
 		}
 		else
