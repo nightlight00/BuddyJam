@@ -6,6 +6,7 @@
     {"id":{"name":"s_player_arm","path":"sprites/s_player_arm/s_player_arm.yy",},"order":7,},
     {"id":{"name":"rm_arena1","path":"rooms/rm_arena1/rm_arena1.yy",},"order":29,},
     {"id":{"name":"o_projectile","path":"objects/o_projectile/o_projectile.yy",},"order":6,},
+    {"id":{"name":"battery","path":"sprites/battery/battery.yy",},"order":4,},
     {"id":{"name":"spidey_walk","path":"sprites/spidey_walk/spidey_walk.yy",},"order":3,},
     {"id":{"name":"o_pickup_parent","path":"objects/o_pickup_parent/o_pickup_parent.yy",},"order":2,},
     {"id":{"name":"s_shells","path":"sprites/s_shells/s_shells.yy",},"order":0,},
