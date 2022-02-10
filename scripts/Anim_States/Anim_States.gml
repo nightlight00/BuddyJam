@@ -5,18 +5,18 @@ function Anim_States(){
 	//Walk and Idle
 	if (speed > 0)
 	{
-		sprite_index = Walk;
+		
 	}
 	else
 	{
-		sprite_index = Idle;
+		sprite_index = Idle_Body;
 	}
 	
 	//Attack
 	if (distance_to_object(o_player) <= attack_dis)
 	{
 		In_Range = true;
-		sprite_index = charge; //need to remove this and put it in spidy
+		sprite_index = Charge_Body; //need to remove this and put it in spidy
 	}
 	else{
 		if (In_Range == true)

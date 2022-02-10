@@ -1,13 +1,13 @@
 {
   "spriteId": {
-    "name": "spidey_idle",
-    "path": "sprites/spidey_idle/spidey_idle.yy",
+    "name": "spbody_idle",
+    "path": "sprites/spbody_idle/spbody_idle.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": {
-    "name": "spidey_idle",
-    "path": "sprites/spidey_idle/spidey_idle.yy",
+    "name": "spbody_idle",
+    "path": "sprites/spbody_idle/spbody_idle.yy",
   },
   "persistent": false,
   "parentObjectId": {
@@ -31,6 +31,7 @@
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":12,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":73,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

@@ -1,5 +1,4 @@
 Check_For_Player();
-Anim_States();
 
 
 
@@ -65,16 +64,16 @@ if (speed > 0)
 		else
 		{
 			if(Hp <= 0)
-		{
-			instance_destroy();
-		}
+			{
+				instance_destroy();
+			}
 			
-			image_xscale += 0.01;
-			image_yscale = image_xscale;
-			Hp -= 0.1
+				image_xscale += 0.01;
+				image_yscale = image_xscale;
+				Hp -= 0.1
 			
 
-			localspd = clamp(localspd - 0.01, 0.10, 2);
+				localspd = clamp(localspd - 0.01, 0.10, 2);
 				
 		}
 		

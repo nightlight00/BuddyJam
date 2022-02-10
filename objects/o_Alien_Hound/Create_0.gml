@@ -12,7 +12,7 @@ image_yscale = image_xscale;
 
 
 
-hurt = spidey_hurt;
+hurt = spbody_charge;
 
 
 

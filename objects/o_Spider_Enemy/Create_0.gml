@@ -1,20 +1,25 @@
+
+
 //set spider scale
 image_xscale = 0.5;
 image_yscale = image_xscale;
 
 //spider color
 image_blend = choose(noone, c_orange);
+;
 
 				//Spider Animations
 ///////////////////////////////////////////////////////
 //////////////////////////////////////////////////////
 
 //show if spider is hurt
-hurt = spidey_hurt;
-Walk = spidey_walk;
-Idle = spidey_idle;
-charge = spidey_charge;
-
+hurt = spbody_idle;
+Walk_body = spbody_walk;
+Walk_Legs = splegs_walk;
+Idle_Body = spbody_idle;
+Idle_Legs = splegs_idle;
+Charge_Body = spbody_charge;
+Charge_legs = splegs_charge;
 
 
 
@@ -57,4 +62,4 @@ calc_path_timer = irandom(30);
 In_Range = false;
 
 
-
+walking = false;
