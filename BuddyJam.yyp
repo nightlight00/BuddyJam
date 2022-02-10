@@ -19,6 +19,7 @@
     {"id":{"name":"o_depthhelper","path":"objects/o_depthhelper/o_depthhelper.yy",},"order":0,},
     {"id":{"name":"o_battery","path":"objects/o_battery/o_battery.yy",},"order":0,},
     {"id":{"name":"o_camera","path":"objects/o_camera/o_camera.yy",},"order":2,},
+    {"id":{"name":"o_Alien_Hound","path":"objects/o_Alien_Hound/o_Alien_Hound.yy",},"order":1,},
     {"id":{"name":"o_wall","path":"objects/o_wall/o_wall.yy",},"order":2,},
     {"id":{"name":"s_tiles","path":"sprites/s_tiles/s_tiles.yy",},"order":1,},
     {"id":{"name":"o_weapon_pick","path":"objects/o_weapon_pick/o_weapon_pick.yy",},"order":3,},

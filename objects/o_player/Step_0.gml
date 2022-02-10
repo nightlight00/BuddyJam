@@ -67,7 +67,7 @@ if (PathCoolDown-- <= 0)
 		PathCoolDown = 100;
 }
 
-if(global.playerHealth <= 0)
+if(global.playerHealth < 1)
 {
 	game_restart();
 }

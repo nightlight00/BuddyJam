@@ -3,16 +3,6 @@ Anim_States();
 
 
 
-//if enemy loses sight of player set speed to 0
-if (speed > 0)
-{
-	if(alert == false)
-	{
-		path_end();
-		speed = 0
-	}
-	
-}
 
 
 /////////////////////////////////////////////////////////
@@ -31,6 +21,16 @@ if(distance_to_object(o_player)>= 400){
 	alert = false;
 }
 
+//if enemy loses sight of player set speed to 0
+if (speed > 0)
+{
+	if(alert == false)
+	{
+		path_end();
+		speed = 0
+	}
+	
+}
 
 
 ////////////////////////////////////////////////////////////

@@ -164,8 +164,8 @@ switch (worldgen_stage)
 					
 					var enem_list = ds_list_create();
 					for (var d = 0; d < 3; d++) { // add common enemies to list
-						if (global.enemyWeight > 0) { // cant be added if not enough space
-							ds_list_add(enem_list, o_Spider_Enemy.object_index);
+						if (global.enemyWeight > 3) { // cant be added if not enough space
+							ds_list_add(enem_list, o_Alien_Hound.object_index);
 						}
 					}
 			
@@ -175,7 +175,7 @@ switch (worldgen_stage)
 			
 					// add weight to each enemy
 					switch (spawn) {
-						case o_Spider_Enemy:
+						case o_Alien_Hound: //need to change this to switch characters
 							global.enemyWeight--;
 							break;
 						default:
@@ -186,7 +186,7 @@ switch (worldgen_stage)
 					if (spawn == noone) {
 						return; }
 			
-					instance_create_layer(x, y, "Instances", spawn);
+					instance_create_layer(x, y, "Enemy", spawn);
 					ds_list_destroy(enem_list);
 				}
 			}

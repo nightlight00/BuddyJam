@@ -1,5 +1,5 @@
 //checks if player has 0 hp
-if (Hp <= 0)
+if (Hp < 1)
 {
 	instance_destroy();
 }
@@ -14,7 +14,7 @@ else
 		//takes away enemys hp
 		other.penetrate -= 1;
 
-		//changes sprite image
+		//changes sprite image to hurt sprite
 		if (Damage_cd-- <= 0)
 		{
 			speed = 0;

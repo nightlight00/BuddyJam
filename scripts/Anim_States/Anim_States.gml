@@ -16,7 +16,7 @@ function Anim_States(){
 	if (distance_to_object(o_player) <= attack_dis)
 	{
 		In_Range = true;
-		sprite_index = charge;
+		sprite_index = charge; //need to remove this and put it in spidy
 	}
 	else{
 		if (In_Range == true)

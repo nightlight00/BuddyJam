@@ -1,20 +1,18 @@
-//set spider scale
-image_xscale = 0.5;
+///Hell hound
+
+
+
+//set alien hound scale
+image_xscale = 1;
 image_yscale = image_xscale;
 
-//spider color
-image_blend = choose(noone, c_orange);
-
-				//Spider Animations
+				//Alien Hound Animations
 ///////////////////////////////////////////////////////
 //////////////////////////////////////////////////////
 
-//show if spider is hurt
-hurt = spidey_hurt;
-Walk = spidey_walk;
-Idle = spidey_idle;
-charge = spidey_charge;
 
+
+hurt = spidey_hurt;
 
 
 
@@ -31,19 +29,23 @@ Hp = clamp(0, MaxHp, MaxHp);
 //damage cool down
 Damage_cd = 5;
 
-enemydamage = global.enemyLevel * 5;
+Attack_cd = 50;
 
-//set spider speed
-localspd = 2;
+wait_cd = 0;
+
+enemydamage = global.enemyLevel * 2;
+
+//set Alien Hound speed
+localspd = 1.2;
 
 //are we chasing the player?
 alert = false;
 
 //distance to start chasing the player
-alert_dis = 200;
+alert_dis = 300;
 
 //attack distance
-attack_dis = 50;
+attack_dis = 0;
 
 //create path resource
 path = path_add();
@@ -52,9 +54,16 @@ path = path_add();
 calc_path_delay = 10;
 
 //set a to,er fpr wjem we calc a path
-calc_path_timer = irandom(30);
+calc_path_timer = irandom(15);
 
+//are we in range to attack
 In_Range = false;
 
+//does enemy cause bleed damage
+Can_After_Damage = true;
+
+Bleeding = false;
+
+bleed_counts = 10;
 
 
