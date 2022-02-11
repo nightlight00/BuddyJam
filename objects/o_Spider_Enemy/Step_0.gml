@@ -57,17 +57,13 @@ if (In_Range == true)
 			global.playerHealth -= clamp(enemydamage / clamp(distance_to_object(o_player), 0, 50), 0, global.playerHealth / 2);
 			
 		}
-		
+		Drops();
 		instance_destroy();
 		
 		
 	}
 	else
 	{
-		if(Hp <= 0)
-		{
-			instance_destroy();
-		}
 			
 		image_xscale += 0.01;
 		image_yscale = image_xscale;

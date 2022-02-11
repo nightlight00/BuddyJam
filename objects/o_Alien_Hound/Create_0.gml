@@ -17,12 +17,6 @@ image_yscale = image_xscale;
 //////////////////////////////////////////////////////
 
 
-
-//enemy Health
-MaxHp += 10 * global.enemyLevel / 5;
-
-Hp = clamp(0, MaxHp, MaxHp);
-
 //damage cool down
 Damage_cd = 5;
 

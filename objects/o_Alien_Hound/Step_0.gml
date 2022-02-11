@@ -57,8 +57,9 @@ else
 
 
 //checks hp
-if(Hp < 1)
+if(image_xscale >= 2)
 {
+	Drops();
 	instance_destroy();
 }		
 
