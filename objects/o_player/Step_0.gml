@@ -1,6 +1,11 @@
 
 global.playerImmuneFrames--;
 
+if (draw_helper++ > 5) {
+	draw_helper_index++;
+	draw_helper = 0;
+}
+
 #region Movement
 
 if (keyboard_check(ord("A")) || keyboard_check(ord("D")))

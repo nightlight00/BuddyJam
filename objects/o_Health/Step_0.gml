@@ -1,14 +1,25 @@
-if (distance_to_object(o_player) <= 4 )
-{
-	if(global.playerHealth < global.playerHealthMax)
+
+if (trailPlayer && global.playerHealth < global.playerHealthMax) {
+	if (distance_to_object(o_player) < 64)
 	{
-		global.playerHealth = clamp(global.playerHealth + 1, 0, global.playerHealthMax);
-		instance_destroy();
-		
+		move_towards_point(o_player.x, o_player.y, speed);
+		speed += 0.3;
+		speed = clamp(speed, 0, 3);
+		if (distance_to_object(o_player) < 6)
+		{
+			global.playerHealth += 4;
+			if (global.playerHealth > global.playerHealthMax) {
+				global.playerHealth = global.playerHealthMax; }
+			instance_destroy(self);
+		}
 	}
-	else
-	{
-		return
-	}
-	
 }
+else {
+	if (distance_to_object(o_player) < 16 && (keyboard_check_pressed(ord("E")))) {
+		instance_destroy(self);
+	}
+}
+
+if (global.playerHealth > global.playerHealthMax) {
+	speed = 0; }
+	

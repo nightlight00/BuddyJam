@@ -1,7 +1,7 @@
 if (holding = -1)
 {
 	weapon_type = ds_list_create();
-	for (var i = 0; i < 5; i++) 
+	for (var i = 0; i < 6; i++) 
 	{
 		if (instance_exists(o_weapon)) {
 			if (o_weapon.current_weap != i) {

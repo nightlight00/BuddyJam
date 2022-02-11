@@ -16,6 +16,11 @@ if (global.playerImmuneFrames < 0 || global.playerImmuneFrames mod 3 == 0) {
 	
 	// draw weapon rotating
 	if (instance_exists(o_weapon)) {
+		if (o_weapon.weap_sprite != s_player_arm) {
+			draw_sprite_ext(o_weapon.weap_sprite, draw_helper_index, x + lengthdir_x(2, dir), 
+			y - 4 + lengthdir_y(1, dir), 1, image_xscale, dir, c_white, 1);
+		}
+		
 		draw_sprite_ext(o_weapon.sprite_index, o_weapon.image_index, x + lengthdir_x(2, dir), 
 		y - 4 + lengthdir_y(1, dir), 1, image_xscale, dir, c_white, 1);
 	}

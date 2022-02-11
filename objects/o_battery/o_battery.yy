@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "battery",
-    "path": "sprites/battery/battery.yy",
+    "name": "s_battery",
+    "path": "sprites/s_battery/s_battery.yy",
   },
   "solid": false,
   "visible": true,

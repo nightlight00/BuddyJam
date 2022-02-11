@@ -132,7 +132,7 @@ switch (worldgen_stage)
 				if (instance_place(x + global.cellSize, y + global.cellSize, o_floor)) { sides++; }
 				if (instance_place(x - global.cellSize, y + global.cellSize, o_floor)) { sides++; }
 				if (instance_place(x + global.cellSize, y - global.cellSize, o_floor)) { sides++; }
-				if ((sides >= 3 && sides <= 6) && irandom(75) == 0)
+				if ((sides >= 3 && sides <= 6) && irandom(75) == 0 && !instance_place(x, y, o_wall))
 				{
 					var closeEgg = instance_nearest(x, y, o_egg);
 					if (distance_to_object(closeEgg) > 4 * global.cellSize)
@@ -159,7 +159,7 @@ switch (worldgen_stage)
 			if (instance_place(x - global.cellSize, y + global.cellSize, o_floor)) { sides++; }
 			if (instance_place(x + global.cellSize, y - global.cellSize, o_floor)) { sides++; }
 			
-			if (sides >= 5 && irandom(70) == 0) {
+			if (sides >= 5 && irandom(70) == 0 && !instance_place(x, y, o_wall)) {
 				var near = instance_nearest(x, y, o_enemy_parent);
 				if (distance_to_object(near) > 48) {
 					

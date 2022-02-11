@@ -1,0 +1,1 @@
+proj_damage = 0.45;
