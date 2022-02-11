@@ -5,8 +5,9 @@ if (instance_exists(o_player) && drawTimer < 0) {
 			// get trolled didnt finish code lul
 			var text = instance_create_layer(o_player.x, o_player.y, "Instances", o_pickup_text);
 			text.item_name = "get trolled didnt finish code lul";
+			Save_Game();
 			room_goto(rm_arena1);
-			global.enemyLevel++;
+			
 		}
 		else {
 			// tell player cant be used yet
