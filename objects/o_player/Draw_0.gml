@@ -15,8 +15,10 @@ if (global.playerImmuneFrames < 0 || global.playerImmuneFrames mod 3 == 0) {
 	}
 	
 	// draw weapon rotating
-	draw_sprite_ext(o_weapon.sprite_index, o_weapon.image_index, x + lengthdir_x(2, dir), 
-	y - 4 + lengthdir_y(1, dir), 1, image_xscale, dir, c_white, 1);
+	if (instance_exists(o_weapon)) {
+		draw_sprite_ext(o_weapon.sprite_index, o_weapon.image_index, x + lengthdir_x(2, dir), 
+		y - 4 + lengthdir_y(1, dir), 1, image_xscale, dir, c_white, 1);
+	}
 	
 	// so player is above arm
 	if (!drawn) {

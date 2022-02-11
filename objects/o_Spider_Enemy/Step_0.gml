@@ -1,8 +1,5 @@
+
 Check_For_Player();
-
-
-
-
 
 /////////////////////////////////////////////////////////
 
@@ -31,51 +28,45 @@ if (speed > 0)
 	
 }
 
-
 ////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////
-	if (In_Range == true)
-	{
-		speed = 0;
-		
-		
-		//if image is scaled up to 2 or more
-		if (image_yscale >= 2)
-		{ 
-			if (global.playerImmuneFrames > 0) 
-			{ 
-				
-			}
-			else 
-			{ 
-				
-				global.playerImmuneFrames = global.playerImmuneFramesReset;
-				
-			
-					//damage player
-				global.playerHealth -= clamp(enemydamage / clamp(distance_to_object(o_player), 0, 50), 0, global.playerHealth / 2);
-				 
-			}
-			instance_destroy();
-		
-			
 
-		}
-		else
-		{
-			if(Hp <= 0)
-			{
-				instance_destroy();
-			}
-			
-				image_xscale += 0.01;
-				image_yscale = image_xscale;
-				Hp -= 0.1
-			
-
-				localspd = clamp(localspd - 0.01, 0.10, 2);
-				
-		}
-		
-		
+if (instance_exists(o_player)) {
+	if (distance_to_object(o_player) <= attack_dis) {
+		In_Range = true;
 	}
+	else {
+		In_Range = false;
+	}
+}
+
+	
+if (In_Range == true)
+{
+	speed = 0;
+		
+	//if image is scaled up to 2 or more
+	if (image_yscale >= 2)
+	{ 
+		if (global.playerImmuneFrames < 0) 
+		{ 
+			global.playerImmuneFrames = global.playerImmuneFramesReset;
+				
+			//damage player
+			global.playerHealth -= clamp(enemydamage / clamp(distance_to_object(o_player), 0, 50), 0, global.playerHealth / 2);		 
+		}
+		instance_destroy();
+	}
+	else
+	{
+		if(Hp <= 0)
+		{
+			instance_destroy();
+		}
+			
+		image_xscale += 0.01;
+		image_yscale = image_xscale;
+		Hp -= 0.1
+		localspd = clamp(localspd - 0.01, 0.10, 2);		
+	}
+}

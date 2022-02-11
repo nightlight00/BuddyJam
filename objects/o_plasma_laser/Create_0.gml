@@ -9,5 +9,5 @@ speed = 0;
 
 image_xscale = 10;
 image_yscale = 0.5;
-proj_damage = 0.069;
+proj_damage = 0.02;
 image_alpha = 0.25;

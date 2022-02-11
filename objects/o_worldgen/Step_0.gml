@@ -2,7 +2,8 @@
 switch (worldgen_stage)
 {
 	case 0:// spawn end point
-		portalX = irandom_range(-40, 40);
+		var sides = 40 + (global.enemyLevel * 5);
+		portalX = irandom_range(-sides, sides);
 		var oth = 40 - abs(portalX);
 		portalY = choose(oth, -oth);
 		
@@ -166,6 +167,7 @@ switch (worldgen_stage)
 					for (var d = 0; d < 3; d++) { // add common enemies to list
 						if (global.enemyWeight > 3) { // cant be added if not enough space
 							ds_list_add(enem_list, o_Alien_Hound.object_index);
+							ds_list_add(enem_list, o_Spider_Enemy);
 						}
 					}
 			
@@ -176,6 +178,9 @@ switch (worldgen_stage)
 					// add weight to each enemy
 					switch (spawn) {
 						case o_Alien_Hound: //need to change this to switch characters
+							global.enemyWeight--;
+							break;
+						case o_Spider_Enemy: //need to change this to switch characters
 							global.enemyWeight--;
 							break;
 						default:

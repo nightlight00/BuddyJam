@@ -1,6 +1,7 @@
 
 if (instance_exists(o_player))
 {
+	
 	var xgoto = ((o_player.x - view_width) + device_mouse_x(0)) / 2;
 	var ygoto = ((o_player.y - view_height) + device_mouse_y(0)) / 2;
 	var xcur = camera_get_view_x(view_camera[0]);

@@ -46,13 +46,25 @@ ds_map_add(playerWeapons[3], "weap_damage", 0.86);
 ds_map_add(playerWeapons[3], "weap_auto", false);
 //ds_map_add(playerWeapons[0], "weap_
 }
-// make pistol have homing shots
+{ /* Railgun - 4 */
+playerWeapons[4] = ds_map_create();
+ds_map_add(playerWeapons[4], "weap_sprite", s_test);
+ds_map_add(playerWeapons[4], "weap_proj", o_plasma_bullet);
+ds_map_add(playerWeapons[4], "weap_cooldown", 18);
+ds_map_add(playerWeapons[4], "weap_spread", 27);
+ds_map_add(playerWeapons[4], "weap_velocity", 3.4);
+ds_map_add(playerWeapons[4], "weap_amount", 2);
+ds_map_add(playerWeapons[4], "weap_damage", 1.45);
+ds_map_add(playerWeapons[4], "weap_auto", false);
+//ds_map_add(playerWeapons[0], "weap_
+}
 
-current_weap = 3;
+current_cooldown = 0;
+
+current_weap = 0;
 swapWeap(current_weap);
 last_weap = current_weap;
 
 image_speed = 0;
 image_index = current_weap;
 
-current_cooldown = 0;

@@ -11,6 +11,7 @@
     {"id":{"name":"o_pickup_parent","path":"objects/o_pickup_parent/o_pickup_parent.yy",},"order":2,},
     {"id":{"name":"s_shells","path":"sprites/s_shells/s_shells.yy",},"order":0,},
     {"id":{"name":"o_worldgen","path":"objects/o_worldgen/o_worldgen.yy",},"order":0,},
+    {"id":{"name":"splegs_walk2","path":"sprites/splegs_walk2/splegs_walk2.yy",},"order":2,},
     {"id":{"name":"o_egg","path":"objects/o_egg/o_egg.yy",},"order":4,},
     {"id":{"name":"o_eProj","path":"objects/o_eProj/o_eProj.yy",},"order":0,},
     {"id":{"name":"o_walker","path":"objects/o_walker/o_walker.yy",},"order":1,},

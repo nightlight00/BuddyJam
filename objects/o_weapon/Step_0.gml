@@ -2,6 +2,8 @@
 if (!instance_exists(o_player)) {
 	return; }
 	
+current_cooldown--;
+	
 x = o_player.x;
 y = o_player.y;
 	
@@ -41,7 +43,6 @@ switch (current_weap) {
 		break;
 }
 
-current_cooldown--;
 if (last_weap != current_weap) {
 	swapWeap(current_weap);
 	last_weap = current_weap;

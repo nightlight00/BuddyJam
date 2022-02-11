@@ -1,1 +1,1 @@
-walker_lifetime = 300;
+walker_lifetime = 300 + (global.enemyLevel * 15);
