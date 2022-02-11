@@ -28,7 +28,7 @@ if (distance_to_object(o_player) <= attack_dis)
 					
 					global.playerImmuneFrames = global.playerImmuneFramesReset;
 						//damage player
-					global.playerHealth -= enemydamage / 2;
+					global.playerHealth -= enemydamage;
 		
 					//check if the player is bleeding
 					if(global.bleed == false)
@@ -41,7 +41,7 @@ if (distance_to_object(o_player) <= attack_dis)
 						{
 						//sets bleeding to true and resets bleed counts
 						global.bleed = true;
-						global.bleed_damage = enemydamage;
+						global.bleed_damage = 1;
 						global.bleed_counts = 10;
 						}
 					}

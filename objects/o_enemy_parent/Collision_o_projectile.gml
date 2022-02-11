@@ -14,7 +14,7 @@ if(speed >= 0)
 	speed -= 0.1
 }
 
-image_xscale += sqrt(other.proj_damage) / 10;
+image_xscale += sqrt(other.proj_damage) / global.enemyLevel / 5;
 image_yscale = image_xscale;
 
 Hp -= other.proj_damage;

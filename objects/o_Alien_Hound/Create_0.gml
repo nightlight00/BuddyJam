@@ -20,7 +20,7 @@ image_yscale = image_xscale;
 //damage cool down
 Damage_cd = 5;
 
-enemydamage = global.enemyLevel * 2;
+enemydamage = global.enemyLevel / 5;
 
 wait_cd = 0;
 

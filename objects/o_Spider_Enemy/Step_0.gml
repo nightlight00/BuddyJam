@@ -1,5 +1,10 @@
-
 Check_For_Player();
+
+if(image_yscale >= 2)
+{
+	Drops()
+	instance_destroy();
+}
 
 /////////////////////////////////////////////////////////
 
