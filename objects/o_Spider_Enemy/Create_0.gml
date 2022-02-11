@@ -18,13 +18,6 @@ image_blend = choose(noone, c_orange);
 ///////////////////////////////////////////////////////
 //////////////////////////////////////////////////////
 
-
-
-//enemy Health
-MaxHp += 10 * global.enemyLevel / 5;
-
-Hp = clamp(0, MaxHp, MaxHp);
-
 //damage cool down
 Damage_cd = 5;
 
@@ -51,4 +44,5 @@ calc_path_delay = 10;
 //set a to,er fpr wjem we calc a path
 calc_path_timer = irandom(30);
 
+//if in range to attack the player
 In_Range = false;

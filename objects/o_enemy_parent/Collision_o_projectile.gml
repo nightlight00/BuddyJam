@@ -1,10 +1,5 @@
-//checks if player has 0 hp
-if (Hp < 0)
-{
-	instance_destroy();
-}
-else
-{
+
+
 	if (image_xscale >= 2)
 	{
 		instance_destroy();
@@ -32,7 +27,7 @@ else
 		Hp -= other.proj_damage;
 		//Hp -= clamp(sqrt(MaxHp) - image_xscale, sqrt(sqrt(MaxHp)), 1); 
 	}
-}
+
 
 
 

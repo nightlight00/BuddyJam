@@ -70,7 +70,6 @@ if (In_Range == true)
 			
 		image_xscale += 0.01;
 		image_yscale = image_xscale;
-		Hp -= 0.1
 		localspd = clamp(localspd - 0.01, 0.10, 2);		
 	}
 }

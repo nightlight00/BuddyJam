@@ -26,11 +26,9 @@ Hp = clamp(0, MaxHp, MaxHp);
 //damage cool down
 Damage_cd = 5;
 
-Attack_cd = 50;
+enemydamage = global.enemyLevel * 2;
 
 wait_cd = 0;
-
-enemydamage = global.enemyLevel * 2;
 
 //set Alien Hound speed
 localspd = 1.2;
@@ -59,8 +57,6 @@ In_Range = false;
 //does enemy cause bleed damage
 Can_After_Damage = true;
 
-Bleeding = false;
 
-bleed_counts = 10;
 
 

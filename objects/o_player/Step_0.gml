@@ -72,6 +72,31 @@ if(global.playerHealth < 1)
 	game_restart();
 }
 
+
+//checks if bleeding
+if (global.bleed == true)
+{
+	if(global.playerHealth <= global.playerHealthMax * 10 / 100)
+	{
+		global.bleed = false;
+	}
+	else
+	{
+		if (global.bleed_counts >= 1)
+		{
+			if(global.bleed_cool_down-- <= 0)
+			{
+				global.bleed_counts--;
+				global.playerHealth -= global.bleed_damage / 5;
+				global.bleed_cool_down = 50;
+			}
+		}
+		else
+		{
+			global.bleed = false;
+		}
+	}
+}	
 		
 
 #endregion
