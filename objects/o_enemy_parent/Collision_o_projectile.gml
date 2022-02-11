@@ -18,7 +18,6 @@ else
 		if (Damage_cd-- <= 0)
 		{
 			speed = 0;
-			sprite_index = hurt;
 			Damage_cd = 5;
 		}
 		

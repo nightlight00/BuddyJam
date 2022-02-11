@@ -13,13 +13,7 @@ image_blend = choose(noone, c_orange);
 //////////////////////////////////////////////////////
 
 //show if spider is hurt
-hurt = spbody_idle;
-Walk_body = spbody_walk;
-Walk_Legs = splegs_walk;
-Idle_Body = spbody_idle;
-Idle_Legs = splegs_idle;
-Charge_Body = spbody_charge;
-Charge_legs = splegs_charge;
+
 
 ///////////////////////////////////////////////////////
 //////////////////////////////////////////////////////
@@ -58,6 +52,3 @@ calc_path_delay = 10;
 calc_path_timer = irandom(30);
 
 In_Range = false;
-
-
-walking = false;

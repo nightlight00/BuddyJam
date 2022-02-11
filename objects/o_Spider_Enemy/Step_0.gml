@@ -17,6 +17,7 @@ if(distance_to_object(o_player)>= 400){
 	alert = false;
 }
 
+
 //if enemy loses sight of player set speed to 0
 if (speed > 0)
 {
@@ -53,9 +54,12 @@ if (In_Range == true)
 			global.playerImmuneFrames = global.playerImmuneFramesReset;
 				
 			//damage player
-			global.playerHealth -= clamp(enemydamage / clamp(distance_to_object(o_player), 0, 50), 0, global.playerHealth / 2);		 
+			global.playerHealth -= clamp(enemydamage / clamp(distance_to_object(o_player), 0, 50), 0, global.playerHealth / 2);
+			
 		}
 		instance_destroy();
+		
+		
 	}
 	else
 	{

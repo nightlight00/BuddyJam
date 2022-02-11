@@ -32,7 +32,7 @@ if (distance_to_object(o_player) <= attack_dis)
 					{
 						if(global.playerHealth <= global.playerHealthMax * 10 / 100)
 						{
-							return
+							
 						}
 						else
 						{

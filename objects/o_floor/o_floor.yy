@@ -5,7 +5,10 @@
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "s_tiles",
+    "path": "sprites/s_tiles/s_tiles.yy",
+  },
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,
