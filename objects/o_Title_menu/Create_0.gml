@@ -16,7 +16,7 @@ option[0, 2] = "Quit Game"
 
 //settings menu
 option[1, 0] = "Window Size";
-option[1, 1] = "Brightness";
+option[1, 1] = "Reset Game";
 option[1, 2] = "Controls";
 option[1, 3] = "Back";
 

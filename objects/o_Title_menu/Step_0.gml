@@ -46,9 +46,13 @@ if Enter_event
 			//window resize code here
 			break;
 			
-			//Brightness
+			//Reset Game
 			case 1:
-			//Brightness code here
+			if(file_exists("Savedgame.save"))
+			{
+				file_delete("Savedgame.save")
+			}
+			show_debug_message("Game was reset")
 			break;
 			
 			//Controls
