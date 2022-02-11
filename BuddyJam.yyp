@@ -54,7 +54,6 @@
     {"id":{"name":"shakescreen","path":"scripts/shakescreen/shakescreen.yy",},"order":4,},
     {"id":{"name":"worldGenBuilds","path":"scripts/worldGenBuilds/worldGenBuilds.yy",},"order":2,},
     {"id":{"name":"s_egg","path":"sprites/s_egg/s_egg.yy",},"order":3,},
-    {"id":{"name":"Flor","path":"sprites/Flor/Flor.yy",},"order":30,},
     {"id":{"name":"o_plasma_shell","path":"objects/o_plasma_shell/o_plasma_shell.yy",},"order":1,},
     {"id":{"name":"o_plasma_laser","path":"objects/o_plasma_laser/o_plasma_laser.yy",},"order":5,},
     {"id":{"name":"o_plasma_rail","path":"objects/o_plasma_rail/o_plasma_rail.yy",},"order":7,},
