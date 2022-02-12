@@ -27,4 +27,4 @@ else{global.enemyLevel = 1;}
 	
 
 
-instance_create_layer(x, y, "Instances", o_worldgen);
+
