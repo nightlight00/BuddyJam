@@ -10,6 +10,7 @@ function Save_Game(){
 
 
 
+
 	//turn all this data into a json string and save it via a buffer
 	var _string = json_stringify(_savedata);
 	var _buffer = buffer_create(string_byte_length(_string) +1, buffer_fixed, 1);

@@ -2,11 +2,18 @@ drawTimer--;
 if (instance_exists(o_player) && drawTimer < 0) {
 	if (distance_to_object(o_player) < 32 && keyboard_check_pressed(ord("E"))) {
 		if (global.hasBattery) {
+			if (global.enemyLevel >= 6)
+			{
+				room_goto(rm_Boss);
+			}
+			else
+			{
 			// get trolled didnt finish code lul
 			var text = instance_create_layer(o_player.x, o_player.y, "Instances", o_pickup_text);
 			text.item_name = "get trolled didnt finish code lul";
 			Save_Game();
 			room_goto(rm_arena1);
+			}
 			
 		}
 		else {

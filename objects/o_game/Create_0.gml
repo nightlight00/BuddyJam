@@ -1,7 +1,7 @@
 
 randomise();
 
-global.cellSize = 32;
+
 global.mp_grid = 0;
 
 global.masterVolume = 1;

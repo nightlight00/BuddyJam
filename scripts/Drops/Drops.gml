@@ -1,5 +1,4 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+//system that gives a chance to drop an object
 function Drops(){
 	random_percentage = irandom_range(0, 10) * 100;
 	random_percentage /= 10;
