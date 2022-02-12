@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Sprite28",
-    "path": "sprites/Sprite28/Sprite28.yy",
+    "name": "s_Health_Shot",
+    "path": "sprites/s_Health_Shot/s_Health_Shot.yy",
   },
   "solid": false,
   "visible": true,
