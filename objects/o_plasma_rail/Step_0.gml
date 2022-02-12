@@ -7,6 +7,7 @@ if (!device_mouse_check_button(0, mb_left) || !instance_exists(o_player) || o_we
 lifetime++;
 if (lifetime >= 45) {
 	if (lifetime == 45) {
+		playSound(snd_laser, 3, false, 1, true);
 		shakescreen(8, 3);
 	}
 	image_xscale = 18;

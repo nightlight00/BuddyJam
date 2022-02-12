@@ -8,6 +8,7 @@ ds_map_add(playerWeapons[0], "weap_velocity", 2);
 ds_map_add(playerWeapons[0], "weap_amount", 1);
 ds_map_add(playerWeapons[0], "weap_damage", 3);
 ds_map_add(playerWeapons[0], "weap_auto", false);
+ds_map_add(playerWeapons[0], "weap_sound", noone);
 //ds_map_add(playerWeapons[0], "weap_
 }
 { /* Shotgun - 1 */
@@ -20,6 +21,7 @@ ds_map_add(playerWeapons[1], "weap_velocity", 5);
 ds_map_add(playerWeapons[1], "weap_amount", 7);
 ds_map_add(playerWeapons[1], "weap_damage", 0.75);
 ds_map_add(playerWeapons[1], "weap_auto", false);
+ds_map_add(playerWeapons[1], "weap_sound", snd_laser);
 //ds_map_add(playerWeapons[0], "weap_
 }
 { /* AR - 2 */
@@ -32,6 +34,7 @@ ds_map_add(playerWeapons[2], "weap_velocity", 4.2);
 ds_map_add(playerWeapons[2], "weap_amount", 1);
 ds_map_add(playerWeapons[2], "weap_damage", 0.86);
 ds_map_add(playerWeapons[2], "weap_auto", true);
+ds_map_add(playerWeapons[2], "weap_sound", snd_laser_ar);
 //ds_map_add(playerWeapons[0], "weap_
 }
 { /* Railgun - 3 */
@@ -44,6 +47,7 @@ ds_map_add(playerWeapons[3], "weap_velocity", 4.2);
 ds_map_add(playerWeapons[3], "weap_amount", 1);
 ds_map_add(playerWeapons[3], "weap_damage", 0.86);
 ds_map_add(playerWeapons[3], "weap_auto", false);
+ds_map_add(playerWeapons[3], "weap_sound", snd_laser_dull);
 //ds_map_add(playerWeapons[0], "weap_
 }
 { /* Tracker - 4 */
@@ -56,18 +60,20 @@ ds_map_add(playerWeapons[4], "weap_velocity", 3.4);
 ds_map_add(playerWeapons[4], "weap_amount", 2);
 ds_map_add(playerWeapons[4], "weap_damage", 1.45);
 ds_map_add(playerWeapons[4], "weap_auto", false);
+ds_map_add(playerWeapons[4], "weap_sound", snd_laser);
 //ds_map_add(playerWeapons[0], "weap_
 }
 { /* Launcher - 5 */
 playerWeapons[5] = ds_map_create();
 ds_map_add(playerWeapons[5], "weap_sprite", s_launcher);
 ds_map_add(playerWeapons[5], "weap_proj", o_plasma_shell);
-ds_map_add(playerWeapons[5], "weap_cooldown", 48);
+ds_map_add(playerWeapons[5], "weap_cooldown", 75);
 ds_map_add(playerWeapons[5], "weap_spread", 2);
 ds_map_add(playerWeapons[5], "weap_velocity", 9);
 ds_map_add(playerWeapons[5], "weap_amount", 1);
-ds_map_add(playerWeapons[5], "weap_damage", 3);
+ds_map_add(playerWeapons[5], "weap_damage", 2);
 ds_map_add(playerWeapons[5], "weap_auto", false);
+ds_map_add(playerWeapons[5], "weap_sound", snd_laser);
 //ds_map_add(playerWeapons[0], "weap_
 }
 

@@ -10,4 +10,5 @@ function swapWeap(weaponSelect){
 	weap_amount = player_weap_map[? "weap_amount"];
 	weap_damage = player_weap_map[? "weap_damage"];
 	weap_auto = player_weap_map[? "weap_auto"];
+	weap_sound = player_weap_map[? "weap_sound"];
 }

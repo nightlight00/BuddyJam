@@ -24,6 +24,7 @@ if (current_cooldown <= 0)
 			proj.speed = weap_velocity + random(i * (weap_velocity / 4));
 		}
 		shakescreen(3, 1.4);
+		playSound(weap_sound, 1, false, o_player.x, o_player.y, 1, true);
 		
 		current_cooldown = weap_cooldown;
 	}

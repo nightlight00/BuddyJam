@@ -6,6 +6,8 @@ if (draw_helper++ > 5) {
 	draw_helper = 0;
 }
 
+audio_listener_position(x, y, 0);
+
 #region Movement
 
 if (keyboard_check(ord("A")) || keyboard_check(ord("D")))
@@ -54,6 +56,11 @@ if (abs(speed) > 0.01)
 else {
 	sprite_index = s_player_idle;
 }
+
+#endregion
+
+#region Pathfinding
+
 if (PathCoolDown-- <= 0)
 {
 	/////////////////////////////////////////////////////////
@@ -103,5 +110,5 @@ if (global.bleed == true)
 	}
 }	
 		
-
 #endregion
+		
