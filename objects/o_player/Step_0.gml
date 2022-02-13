@@ -47,6 +47,16 @@ box = bbox_top;
 if (vspeed > 0) { box = bbox_bottom; }
 if (collision_point(bbox_right, box + vspeed, o_wall, false, true) || collision_point(bbox_left, box + vspeed, o_wall, false, true)) {
 	vspeed = 0; }
+	
+	//teleporter
+	var box = bbox_right;
+if (hspeed < 0) { box = bbox_left; }
+if (collision_point(box + hspeed, bbox_top, o_goal, false, true) || collision_point(box + hspeed, bbox_bottom, o_wall, false, true)) {
+	hspeed = 0; }
+box = bbox_top;
+if (vspeed > 0) { box = bbox_bottom; }
+if (collision_point(bbox_right, box + vspeed, o_goal, false, true) || collision_point(bbox_left, box + vspeed, o_wall, false, true)) {
+	vspeed = 0; }
 
 if (abs(speed) > 0.01)
 {

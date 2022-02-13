@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "s_goal",
-    "path": "sprites/s_goal/s_goal.yy",
+    "name": "s_Teleporter",
+    "path": "sprites/s_Teleporter/s_Teleporter.yy",
   },
   "solid": false,
   "visible": true,
