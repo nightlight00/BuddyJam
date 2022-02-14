@@ -8,7 +8,7 @@ ds_map_add(playerWeapons[0], "weap_velocity", 2);
 ds_map_add(playerWeapons[0], "weap_amount", 1);
 ds_map_add(playerWeapons[0], "weap_damage", 3);
 ds_map_add(playerWeapons[0], "weap_auto", false);
-ds_map_add(playerWeapons[0], "weap_sound", noone);
+ds_map_add(playerWeapons[0], "weap_sound", snd_laser_dull);
 //ds_map_add(playerWeapons[0], "weap_
 }
 { /* Shotgun - 1 */
@@ -79,7 +79,7 @@ ds_map_add(playerWeapons[5], "weap_sound", snd_laser);
 
 current_cooldown = 0;
 
-current_weap = 5;
+current_weap = 0;
 swapWeap(current_weap);
 last_weap = current_weap;
 

@@ -54,6 +54,7 @@ if (In_Range == true)
 	//if image is scaled up to 2 or more
 	if (image_yscale >= 2)
 	{ 
+		/* create spider explosion instead
 		if (global.playerImmuneFrames < 0) 
 		{ 
 			global.playerImmuneFrames = global.playerImmuneFramesReset;
@@ -62,6 +63,9 @@ if (In_Range == true)
 			global.playerHealth -= clamp(enemydamage / clamp(distance_to_object(o_player), 0, 50), 0, global.playerHealth / 2);
 			
 		}
+		*/ 
+		instance_create_layer(x, y, "Instances", o_spider_death);
+		
 		Drops();
 		instance_destroy();
 		

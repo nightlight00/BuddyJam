@@ -154,12 +154,8 @@ switch (worldgen_stage)
 			if (instance_place(x + global.cellSize, y, o_floor)) { sides++; }
 			if (instance_place(x, y + global.cellSize, o_floor)) { sides++; }
 			if (instance_place(x, y - global.cellSize, o_floor)) { sides++; }
-			if (instance_place(x - global.cellSize, y - global.cellSize, o_floor)) { sides++; }
-			if (instance_place(x + global.cellSize, y + global.cellSize, o_floor)) { sides++; }
-			if (instance_place(x - global.cellSize, y + global.cellSize, o_floor)) { sides++; }
-			if (instance_place(x + global.cellSize, y - global.cellSize, o_floor)) { sides++; }
 			
-			if (sides >= 5 && irandom(70) == 0 && !instance_place(x, y, o_wall)) {
+			if (sides == 4 && irandom(70) == 0 && !instance_place(x, y, o_wall)) {
 				var near = instance_nearest(x, y, o_enemy_parent);
 				if (distance_to_object(near) > 48) {
 					

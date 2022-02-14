@@ -1,5 +1,8 @@
 /// @description 
 
+player_dead = false;
+safe_dir = 0;
+
 PathCoolDown = 0;
 speed_increment = 0.18;
 speed_max = 2.3;
@@ -7,8 +10,8 @@ speed_max = 2.3;
 draw_helper = 0;
 draw_helper_index = 0;
 
-global.playerHealthMax = 17;
-global.playerHealth = clamp(0, global.playerHealthMax, global.playerHealthMax);
+global.playerHealthMax = 17; // 17
+global.playerHealth = global.playerHealthMax
 global.playerImmuneFrames = 20;
 global.playerImmuneFramesReset = 35;
 

@@ -1,5 +1,5 @@
 
-if (!instance_exists(o_player)) {
+if (!instance_exists(o_player) || o_player.player_dead) {
 	return; }
 	
 current_cooldown--;

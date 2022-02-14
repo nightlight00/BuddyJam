@@ -1,4 +1,8 @@
 
+if (o_player.player_dead) {
+	speed = 0;
+	return; }
+
 if (trailPlayer) {
 	if (distance_to_object(o_player) < 64)
 	{
@@ -9,6 +13,9 @@ if (trailPlayer) {
 		{
 			instance_destroy(self);
 		}
+	}
+	else {
+		speed = 0;
 	}
 }
 else {

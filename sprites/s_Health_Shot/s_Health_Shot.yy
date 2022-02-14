@@ -97,8 +97,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "BuddyJam",
-    "path": "BuddyJam.yyp",
+    "name": "Pickups",
+    "path": "folders/Pickups.yy",
   },
   "resourceVersion": "1.0",
   "name": "s_Health_Shot",

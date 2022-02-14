@@ -1,12 +1,29 @@
 
 global.playerImmuneFrames--;
 
+audio_listener_position(x, y, 0);
+audio_set_master_gain(0, global.masterVolume);
+
+// handle player death
+if(global.playerHealth <= 0)
+{
+	player_dead = true;
+	if (!instance_exists(o_death_screen)) {
+		speed = 0;
+		image_index = 0;
+		sprite_index = s_player_dead;
+		instance_create_layer(x, y, "Instances", o_death_screen); 
+	}
+	
+	return; // prevent rest of code from running
+}
+
+
+
 if (draw_helper++ > 5) {
 	draw_helper_index++;
 	draw_helper = 0;
 }
-
-audio_listener_position(x, y, 0);
 
 #region Movement
 
@@ -89,16 +106,10 @@ if (PathCoolDown-- <= 0)
 		PathCoolDown = 100;
 }
 
-if(global.playerHealth < 1)
-{
-	game_restart();
-}
-
-
 //checks if bleeding
 if (global.bleed == true)
 {
-	if(global.playerHealth <= global.playerHealthMax * 10 / 100)
+	if(global.playerHealth <= global.playerHealthMax / 10)
 	{
 		global.bleed = false;
 	}
