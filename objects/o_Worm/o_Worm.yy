@@ -1,14 +1,11 @@
 {
   "spriteId": {
-    "name": "s_scorp",
-    "path": "sprites/s_scorp/s_scorp.yy",
+    "name": "s_worm_front",
+    "path": "sprites/s_worm_front/s_worm_front.yy",
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": {
-    "name": "s_scorp",
-    "path": "sprites/s_scorp/s_scorp.yy",
-  },
+  "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
     "name": "o_enemy_parent",
@@ -27,20 +24,18 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
-  "overriddenProperties": [
-    {"propertyId":{"name":"MaxHp","path":"objects/o_enemy_parent/o_enemy_parent.yy",},"objectId":{"name":"o_enemy_parent","path":"objects/o_enemy_parent/o_enemy_parent.yy",},"value":"20","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-  ],
+  "overriddenProperties": [],
   "parent": {
     "name": "Entity",
     "path": "folders/Enemies/Entity.yy",
   },
   "resourceVersion": "1.0",
-  "name": "o_Scorp",
+  "name": "o_Worm",
   "tags": [],
   "resourceType": "GMObject",
 }

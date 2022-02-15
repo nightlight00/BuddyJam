@@ -163,6 +163,7 @@ switch (worldgen_stage)
 						ds_list_add(enem_list, o_Alien_Hound.object_index);
 						ds_list_add(enem_list, o_Spider_Enemy);
 						ds_list_add(enem_list, o_Scorp);
+						ds_list_add(enem_list, o_Worm);
 						
 					}
 					// put it out here so its only added once, so less often chance
@@ -182,6 +183,9 @@ switch (worldgen_stage)
 							global.enemyWeight--;
 							break;
 						case o_Scorp: //need to change this to switch characters
+							global.enemyWeight -= 3;
+							break;
+							case o_Worm: //need to change this to switch characters
 							global.enemyWeight -= 3;
 							break;
 						default:

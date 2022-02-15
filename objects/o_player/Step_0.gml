@@ -18,7 +18,19 @@ if(global.playerHealth <= 0)
 	return; // prevent rest of code from running
 }
 
-
+//is player poisoned?
+if(poison = true)
+{
+	if (poison_timer-- > 0)
+	{
+		speed_max = 0.4;	
+	}
+	else
+	{
+		poison = false
+		speed_max = 2.3;
+	}
+}
 
 if (draw_helper++ > 5) {
 	draw_helper_index++;

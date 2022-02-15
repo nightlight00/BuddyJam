@@ -3,6 +3,13 @@
 player_dead = false;
 safe_dir = 0;
 
+//poison
+//how long the player is poisoned 
+poison_timer = 0;
+
+//checks if the player is poisoned
+poison = false;
+
 PathCoolDown = 0;
 speed_increment = 0.18;
 speed_max = 2.3;

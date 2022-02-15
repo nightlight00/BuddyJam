@@ -11,6 +11,7 @@ function Check_For_Player(){
 		alert = true;
 		
 		
+		
 		speed = localspd;
 		
 		
