@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "s_egg",
-    "path": "sprites/s_egg/s_egg.yy",
+    "name": "s_eggsacs",
+    "path": "sprites/s_eggsacs/s_eggsacs.yy",
   },
   "solid": false,
   "visible": true,

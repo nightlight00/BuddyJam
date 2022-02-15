@@ -39,5 +39,30 @@ switch (dust_style) {
 			speed = 0.9;
 		}
 		break;
-		
+	case 4: // falling leaves
+		sprite_index = s_leafdust;
+		image_index = irandom(4);
+		if (image_xscale == 1) {
+			image_xscale = random_range(0.7, 1.05);
+			image_yscale = image_xscale;
+		}
+		dust_lifetime = 360;
+		speed = 0;
+		vspeed = 0.8;
+		hspeed = random_range(-0.8, 0.8);
+		break;
+	case 5: // break egg
+		sprite_index = s_eggdust;
+		image_index = irandom(4);
+		if (image_xscale == 1) {
+			image_xscale = random_range(0.9, 1);
+			image_yscale = image_xscale;
+		}
+		if (speed == 0) {
+			vspeed = random(-0.6) - 0.6;
+			hspeed = random_range(-0.9, 0.9);
+		}
+		dust_lifetime = 60;
+		image_angle = random(360);
+		break;
 }

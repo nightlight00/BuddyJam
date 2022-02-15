@@ -146,7 +146,6 @@ switch (worldgen_stage)
 			worldgen_stage++; }
 		break;
 	case 8: // spawn enemies
-	
 		with (o_floor)
 		{
 			var sides = 0;
@@ -161,11 +160,14 @@ switch (worldgen_stage)
 					
 					var enem_list = ds_list_create();
 					for (var d = 0; d < 3; d++) { // add common enemies to list
-						if (global.enemyWeight > 3) { // cant be added if not enough space
-							ds_list_add(enem_list, o_Alien_Hound.object_index);
-							ds_list_add(enem_list, o_Spider_Enemy);
-						}
+						ds_list_add(enem_list, o_Alien_Hound.object_index);
+						ds_list_add(enem_list, o_Spider_Enemy);
+						ds_list_add(enem_list, o_Scorp);
+						
 					}
+					// put it out here so its only added once, so less often chance
+					ds_list_add(enem_list, o_Scorp);
+			
 			
 					// shuffle list
 					ds_list_shuffle(enem_list);
@@ -178,6 +180,9 @@ switch (worldgen_stage)
 							break;
 						case o_Spider_Enemy: //need to change this to switch characters
 							global.enemyWeight--;
+							break;
+						case o_Scorp: //need to change this to switch characters
+							global.enemyWeight -= 3;
 							break;
 						default:
 							return;

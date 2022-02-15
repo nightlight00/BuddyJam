@@ -1,5 +1,16 @@
 //system that gives a chance to drop an object
 function Drops(){
+	
+	var _max = 80 - ((global.playerHealthMax - global.playerHealth) * 3);
+	
+	// equals 1 so they dont drop if 0, or when player at max health
+	if (irandom(_max) == 1) {
+		instance_create_layer(x, y, "Instances", o_Health);
+	}
+	
+	show_debug_message(string(_max));
+	
+	/*
 	random_percentage = irandom_range(0, 10) * 100;
 	random_percentage /= 10;
 	show_debug_message(string(random_percentage));
@@ -27,4 +38,5 @@ function Drops(){
 		show_debug_message(string(set_min));
 		show_debug_message(string(set_max));
 	}
+	*/
 }
