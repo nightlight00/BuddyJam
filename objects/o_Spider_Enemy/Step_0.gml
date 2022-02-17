@@ -2,7 +2,8 @@ Check_For_Player();
 
 if(image_yscale >= 2)
 {
-	Drops()
+	audio_play_sound(snd_desintegration, 1, 0);
+	Drops();
 	instance_destroy();
 }
 

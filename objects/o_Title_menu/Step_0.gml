@@ -23,6 +23,7 @@ switch(menu_level)
 		{
 			//this is start game
 			case 0:	
+			audio_stop_all();
 			// resets enemy level
 			if(file_exists("Savedgame.save"))
 			{

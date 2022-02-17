@@ -24,6 +24,8 @@ if (file_exists("Savedgame.save"))
 }
 else{global.enemyLevel = 1;}
 
+
+
 	
 
 

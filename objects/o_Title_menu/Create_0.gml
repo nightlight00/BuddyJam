@@ -1,3 +1,4 @@
+audio_play_sound(Calyx_Title_Theme, 1, 4)
 width = 112;
 height = 184;
 

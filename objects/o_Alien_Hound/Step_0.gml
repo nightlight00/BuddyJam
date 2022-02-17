@@ -59,11 +59,11 @@ else
 
 
 //checks hp
-if(image_xscale >= 2)
+if(image_xscale >= 1.3)
 {
+	audio_play_sound(snd_desintegration, 1, 0);
 	Drops();
 	instance_destroy();
 }		
-
 
 
