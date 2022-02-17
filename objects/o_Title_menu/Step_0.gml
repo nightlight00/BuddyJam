@@ -33,17 +33,21 @@ switch(menu_level)
 			room_goto_next();	
 			break;
 				
+			case 1:
+			room_goto(rm_Boss);
+			break;
+				
 			//settings
-			case 1: 
+			case 2: 
 			menu_level = 1;	
 			break;
 				
-			case 2:
+			case 3:
 			menu_level = 2;
 			break;
 				
 			//quit game
-			case 3:	
+			case 4:	
 			game_end();	
 			break;
 		}

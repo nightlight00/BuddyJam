@@ -17,7 +17,8 @@ switch (dust_style) {
 		image_alpha -= 0.02;
 		break;
 	case 4: // falling leaves
-		hspeed = sin(current_time / 250);
+		hspeed = sin(current_time / (250 + (ystart / 100))) * (image_xscale * 0.7); // * ((image_xscale + image_yscale) / 1.4);
+		//vspeed += 0.01;
 		image_angle = hspeed * 50;
 		if (dust_lifetime < 160) {
 			image_alpha -= 0.015;

@@ -40,11 +40,13 @@ function buildSquare(posX, posY, sizeX, sizeY = sizeX)
 	{
 		for (var i2 = -(sizeY - 1); i2 < sizeY; i2++)
 		{
-			if (!instance_place(posX + (i * global.cellSize), posY + (i2 * global.cellSize), o_floor))
+			if (!instance_place(posX + (i * 32), posY + (i2 * 32), o_floor))
 			{
-				with (instance_create_layer(posX + (i * global.cellSize), posY + (i2 * global.cellSize), "Floor", o_floor))
+				with (instance_create_layer(posX + (i * 32), posY + (i2 * 32), "Floor", o_floor))
 				{
-					image_index = 2;
+					if (room != rm_Boss) {
+						image_index = 2;
+					}
 				}
 			}
 		}

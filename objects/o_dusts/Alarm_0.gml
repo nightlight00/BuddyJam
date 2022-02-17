@@ -46,8 +46,9 @@ switch (dust_style) {
 			image_xscale = random_range(0.7, 1.05);
 			image_yscale = image_xscale;
 		}
+		image_xscale = choose(-image_xscale, image_xscale);
+		image_yscale = choose(-image_yscale, image_yscale);
 		dust_lifetime = 360;
-		speed = 0;
 		vspeed = 0.8;
 		hspeed = random_range(-0.8, 0.8);
 		break;

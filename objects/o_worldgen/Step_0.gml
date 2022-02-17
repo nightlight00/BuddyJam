@@ -1,4 +1,29 @@
 
+if (room == rm_Boss) {
+	switch (worldgen_stage) {
+		case 0:
+			buildSquare(room_width / 2, room_height / 2, 7, 5);
+			worldgen_stage++;
+			break;
+		case 1:
+			with (o_floor)
+			{
+				placeWall(x - global.cellSize, y);
+				placeWall(x + global.cellSize, y);
+				placeWall(x, y + global.cellSize);
+				placeWall(x, y - global.cellSize);
+				placeWall(x - global.cellSize, y - global.cellSize);
+				placeWall(x + global.cellSize, y - global.cellSize);
+				placeWall(x + global.cellSize, y + global.cellSize);
+				placeWall(x - global.cellSize, y + global.cellSize);
+
+			}
+			worldgen_stage++;
+			break;
+	}
+	return;
+}
+
 switch (worldgen_stage)
 {
 	case 0:// spawn end point

@@ -13,9 +13,10 @@ global.masterVolume = 1;
 
 //pause menu
 option[0, 0] = "Commence";
-option[0, 1] = "Settings";
-option[0, 2] = "Creators";
-option[0, 3] = "Depart";
+option[0, 1] = "Skip to boss : DEBUG";
+option[0, 2] = "Settings";
+option[0, 3] = "Creators";
+option[0, 4] = "Depart";
 
 //settings menu
 option[1, 0] = "Window Size : windowed";

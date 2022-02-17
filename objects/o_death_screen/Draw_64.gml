@@ -4,7 +4,7 @@ draw_sprite_ext(s_test, 0, 0, 0, display_get_gui_width() / 8, display_get_gui_he
 //draw options
 draw_set_font(f_font);
 draw_set_valign(fa_top);
-draw_set_valign(fa_left);
+draw_set_halign(fa_left);
 
 //dynamically get width adn height of menu
 var _new_width = 0;
