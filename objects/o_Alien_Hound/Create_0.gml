@@ -1,15 +1,15 @@
 ///Hell hound
-
+angle = 0;
 
 
 //set alien hound scale
-image_xscale = 1;
+image_xscale = 0.5;
 image_yscale = image_xscale;
 
 				//Alien Hound Animations
 ///////////////////////////////////////////////////////
 //////////////////////////////////////////////////////
-
+state = s_worm_front;
 
 
 

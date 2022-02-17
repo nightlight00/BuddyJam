@@ -1,1 +1,0 @@
-draw_sprite(s_worm_front, -1, x, y)

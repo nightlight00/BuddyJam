@@ -1,4 +1,5 @@
 
+
 if (global.enemyLevel == 5) {
 	var pd = point_direction(x, y, o_player.x, o_player.y);
 	var dd = angle_difference(direction, pd);

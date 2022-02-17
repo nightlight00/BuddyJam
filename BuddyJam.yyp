@@ -104,7 +104,6 @@
     {"id":{"name":"s_scorp_stab","path":"sprites/s_scorp_stab/s_scorp_stab.yy",},"order":1,},
     {"id":{"name":"createDust","path":"scripts/createDust/createDust.yy",},"order":2,},
     {"id":{"name":"s_scorp_laser","path":"sprites/s_scorp_laser/s_scorp_laser.yy",},"order":3,},
-    {"id":{"name":"o_Worm","path":"objects/o_Worm/o_Worm.yy",},"order":3,},
     {"id":{"name":"s_summon_warn","path":"sprites/s_summon_warn/s_summon_warn.yy",},"order":2,},
     {"id":{"name":"s_explosion_spider","path":"sprites/s_explosion_spider/s_explosion_spider.yy",},"order":0,},
     {"id":{"name":"_2A5913D4_1139_4EA1_BE3F_092E516931B9","path":"sprites/_2A5913D4_1139_4EA1_BE3F_092E516931B9/_2A5913D4_1139_4EA1_BE3F_092E516931B9.yy",},"order":6,},

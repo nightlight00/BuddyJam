@@ -1,6 +1,8 @@
 Check_For_Player();
 //note to self add animations
 
+angle = point_direction(x, y, o_player.x, o_player.y) + 90
+
 
 ///////////////////////////////////////////
 //////////////////////////////////////////
