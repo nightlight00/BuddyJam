@@ -1,6 +1,7 @@
 
 switch (dust_style) {
 	case 1: //plasma dusts
+	case 6: // boss plasma
 		image_angle += speed * 4;
 		speed *= 0.97;
 		image_alpha -= 0.05;
@@ -32,6 +33,10 @@ switch (dust_style) {
 		vspeed += 0.056;
 		image_alpha -= 0.017;
 		image_angle += hspeed * 3;
+		break;
+	case 7: // flower dust
+		image_angle += 15 * (dust_lifetime / 3);
+		image_alpha -= 0.02;
 		break;
 }
 

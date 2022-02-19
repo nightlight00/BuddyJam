@@ -5,10 +5,11 @@ safe_dir = 0;
 
 //poison
 //how long the player is poisoned 
+poison = false;
 poison_timer = 0;
 
-//checks if the player is poisoned
-poison = false;
+encumbered = false;
+encumber_timer = 0;
 
 PathCoolDown = 0;
 speed_increment = 0.18;

@@ -4,7 +4,7 @@ function Drops(){
 	var _max = 80 - ((global.playerHealthMax - global.playerHealth) * 3);
 	
 	// equals 1 so they dont drop if 0, or when player at max health
-	if (irandom(_max) == 1) {
+	if (irandom(_max) <= 1.25) {
 		instance_create_layer(x, y, "Instances", o_Health);
 	}
 	

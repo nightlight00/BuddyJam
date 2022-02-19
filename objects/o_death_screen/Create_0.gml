@@ -19,3 +19,9 @@ op_length = 2;
 menu_level = 0;
 
 image_alpha = 0;
+
+
+death_message = "mission failed";
+if (room == rm_Boss) {
+	death_message = "victory is futile";
+}

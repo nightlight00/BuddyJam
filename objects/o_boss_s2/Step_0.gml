@@ -4,12 +4,28 @@
 
 // choose attack
 if (attack_cooldown == 0) {
+	
 	// choose an attack from a dynamic list 
 	var atklist = ds_list_create();
 	ds_list_add(atklist, 1);
 	ds_list_add(atklist, 2);
-	ds_list_add(atklist, 3);
-	ds_list_add(atklist, 4); 
+	if (hp < MaxHp * 0.65) {
+		// allow mini lasers to spawn
+		ds_list_add(atklist, 3);
+		// make these two more common
+		ds_list_add(atklist, 1);
+		ds_list_add(atklist, 2);
+	}
+	if (hp > MaxHp * 0.1) {
+		if (hp < MaxHp * 0.75) {
+			// dont have spiders spawn at the beginning or end of the fight
+			ds_list_add(atklist, 4);
+		}
+		if (hp < MaxHp * 0.8) {
+			// to help make fight feel like its progressing, but not at end because unfair hits can happen
+			ds_list_add(atklist, 5); 
+		}
+	}
 	
 	ds_list_shuffle(atklist);
 	current_attack = ds_list_find_value(atklist, 0);
@@ -40,6 +56,13 @@ if (attack_cooldown == 0) {
 		case 4: // summon spiders
 			attack_timer = 60; // dont change things here, more are summoned instead of faster timers
 			attack_cooldown = 100;
+			break;
+		case 5: // slam
+			attack_timer = 42;
+			attack_cooldown = 45;
+			arm_version = s_boss_stage2_arm_slam;
+			image_index = 0;
+			break;
 		default: break;
 	}
 }
@@ -53,8 +76,8 @@ if (attack_timer > 0)
 		case 1: // laser attack
 			if (attack_timer mod 40 == 39) {
 				// creates the warning, which in turn creates the laser
-				targetdir = point_direction(x + wiggle, y + 32 - wiggle2, o_player.x, o_player.y) + 90;
-				var laser = instance_create_layer(x + wiggle, y + 32 - wiggle2, "Player", o_laser_boss_warn);
+				targetdir = point_direction(x + wiggle, y + (32 * image_yscale) - wiggle2, o_player.x, o_player.y) + 90;
+				var laser = instance_create_layer(x + wiggle, y + (32 * image_yscale) - wiggle2, "Player", o_laser_boss_warn);
 				laser.direction = targetdir;
 				laser.image_angle = laser.direction;
 				laser.image_xscale = 1 + ((image_xscale - 1) * 0.5);
@@ -109,6 +132,35 @@ if (attack_timer > 0)
 				for (var i = 0; i < amt; i++) {
 					with (instance_find(o_floor, irandom(instance_number(o_floor) - 1))) {
 						instance_create_layer(x, y, "Instances", o_boss_summon);
+					}
+				}
+			}
+			break;
+		case 5: // slam
+			if (attack_timer == 12) {
+				// ground slam at arms
+				for (var i = 0; i < 4; i++) {
+					var origX, origY;
+					switch (i) {
+						// origin point of each arms bulb
+						case 0: origX = -32 * image_xscale; origY = 11 * image_yscale; break;
+						case 1: origX = 32 * image_xscale; origY = 11 * image_yscale; break;
+						case 2: origX = -11 * image_xscale; origY = 20 * image_yscale; break;
+						case 3: origX = 11 * image_xscale; origY = 20 * image_yscale; break;
+					}
+					var slam = instance_create_layer(x + wiggle + origX, y + 32 - wiggle2 + origY, "Instances", o_boss_slam);
+					slam.image_xscale = image_xscale * 1.2;
+					slam.image_yscale = slam.image_xscale;
+				}
+				// create falling flowers
+				shakescreen(3, 4);
+				arm_version = s_boss_stage2_arms;
+				var amt = 3;
+				if (hp < MaxHp * 0.5) { amt++; }
+				if (hp < MaxHp * 0.2) { amt++; }
+				for (var i = 0; i < amt; i++) {
+					with (instance_find(o_floor, irandom(instance_number(o_floor) - 1))) {
+						instance_create_layer(x, y-192, "Instances", o_falling_flower);
 					}
 				}
 			}

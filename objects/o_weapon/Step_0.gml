@@ -42,6 +42,13 @@ switch (current_weap) {
 			}
 		}
 		break;
+	case 5: // launcher
+		if (current_cooldown == weap_cooldown - 1) {
+			// add 'poison' since it slows movement speed
+			o_player.encumbered = true;
+			o_player.encumber_timer = 35;
+		}
+		break;
 }
 
 if (last_weap != current_weap) {

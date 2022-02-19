@@ -12,7 +12,7 @@ if (lifetime >= 45) {
 	}
 	image_xscale = 18;
 	image_yscale = 1.5;
-	image_alpha -= 0.02;
+	image_alpha -= 0.04;
 	if (image_alpha < 0.1) {
 		instance_destroy(); }
 }

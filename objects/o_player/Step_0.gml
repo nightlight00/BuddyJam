@@ -1,6 +1,12 @@
 
 global.playerImmuneFrames--;
 
+if (draw_helper++ > 5) {
+	draw_helper_index++;
+	draw_helper = 0;
+}
+
+
 audio_listener_position(x, y, 0);
 audio_set_master_gain(0, global.masterVolume);
 
@@ -16,25 +22,6 @@ if(global.playerHealth <= 0)
 	}
 	
 	return; // prevent rest of code from running
-}
-
-//is player poisoned?
-if(poison = true)
-{
-	if (poison_timer-- > 0)
-	{
-		speed_max = 0.4;	
-	}
-	else
-	{
-		poison = false
-		speed_max = 2.3;
-	}
-}
-
-if (draw_helper++ > 5) {
-	draw_helper_index++;
-	draw_helper = 0;
 }
 
 #region Movement
@@ -118,30 +105,51 @@ if (PathCoolDown-- <= 0)
 		PathCoolDown = 100;
 }
 
-//checks if bleeding
-if (global.bleed == true)
-{
-	if(global.playerHealth <= global.playerHealthMax / 10)
-	{
-		global.bleed = false;
+#endregion
+		
+		
+#region Debuffs
+
+// reset max speed before due to numerous speed lowering debuffs
+speed_max = 2.3
+
+// poison debuff - lowers speed
+if (poison) {
+	if (poison_timer-- > 0) {
+		speed_max -= 1.3;
 	}
-	else
-	{
-		if (global.bleed_counts >= 1)
-		{
-			if(global.bleed_cool_down-- <= 0)
-			{
+	else {
+		poison = false;
+	}
+}
+
+// encumbered debuff - halves speed
+if (encumbered) {
+	if (encumber_timer-- > 0) {
+		speed_max /= 2;
+	}
+	else {
+		encumbered = false;
+	}
+}
+
+// bleeding debuff - drains health when above 10% of max
+if (global.bleed) {
+	if (global.playerHealth <= global.playerHealthMax / 10) {
+		global.bleed = false; }
+	else {
+		if (global.bleed_counts > 0) {
+			global.playerHealth -= (global.bleed_damage / 7) * global.bleed_counts;
+			if (global.bleed_cool_down-- < 0) {
 				global.bleed_counts--;
-				global.playerHealth -= global.bleed_damage / 5;
-				global.bleed_cool_down = 50;
+				global.bleed_cool_down = 25;
 			}
 		}
-		else
-		{
+		else {
 			global.bleed = false;
 		}
 	}
-}	
+}
 		
 #endregion
 		

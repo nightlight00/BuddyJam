@@ -29,3 +29,8 @@ for (var i = 0; i < op_length; i++)
 	if pos == i {_c = c_yellow}
 	draw_text_color(32 + op_border, 64 + op_border + op_space * i , option[menu_level, i], _c, _c, _c, _c, 1);
 }
+
+// draw death message
+draw_set_halign(fa_center);
+draw_text_transformed(display_get_gui_width() / 2, display_get_gui_height() / 2 - 96, death_message, 2, 2, 0);
+

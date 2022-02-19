@@ -30,7 +30,7 @@
   "properties": [],
   "overriddenProperties": [
     {"propertyId":{"name":"penetrate","path":"objects/o_eProj/o_eProj.yy",},"objectId":{"name":"o_eProj","path":"objects/o_eProj/o_eProj.yy",},"value":"-1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-    {"propertyId":{"name":"damage","path":"objects/o_eProj/o_eProj.yy",},"objectId":{"name":"o_eProj","path":"objects/o_eProj/o_eProj.yy",},"value":"0.75","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"damage","path":"objects/o_eProj/o_eProj.yy",},"objectId":{"name":"o_eProj","path":"objects/o_eProj/o_eProj.yy",},"value":"1.35","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "Projec",

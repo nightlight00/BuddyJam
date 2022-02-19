@@ -17,6 +17,9 @@ if (!instance_exists(o_weapon)) {
 	
 if (o_weapon.current_weap == 4) {
 	var enem = instance_nearest(x, y, o_enemy_parent);
+	if (instance_exists(o_boss_s2)) {
+		enem = o_boss_s2;
+	}
 	if (distance_to_object(enem) < 64) {
 		var pd = point_direction(x, y, enem.x, enem.y);
 		var dd = angle_difference(direction, pd);

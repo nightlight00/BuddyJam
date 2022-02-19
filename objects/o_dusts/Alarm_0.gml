@@ -66,4 +66,26 @@ switch (dust_style) {
 		dust_lifetime = 60;
 		image_angle = random(360);
 		break;
+	case 6: // boss dust
+		image_index = irandom(3);
+		image_alpha = 0.6;
+		sprite_index = s_plasmadust;
+		dust_lifetime = 18;
+		if (speed == 0) {
+			speed = 1.1; }
+		if (image_xscale == 1) {
+			image_xscale = random_range(0.7, 1);
+			image_yscale = image_xscale;
+		}
+		break;
+	case 7: // flower dust
+		image_index = irandom(3);
+		sprite_index = s_flowerdust;
+		image_alpha = 0.9;
+		if (image_xscale == 1) {
+			image_xscale = random_range(0.8, 1.05);
+			image_yscale = image_xscale;
+		}
+		dust_lifetime = 20;
+		break;
 }

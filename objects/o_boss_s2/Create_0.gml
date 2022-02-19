@@ -17,5 +17,8 @@ desiredY = y - 40;
 
 targetdir = 0;
 
-hp = 80;
-MaxHp = 80;
+hp = 100;
+MaxHp = 100;
+defense = 0;
+
+arm_version = s_boss_stage2_arms;

@@ -1,4 +1,4 @@
-if (image_index > 3) {
+if (image_index > 3 && room != rm_Boss) {
 	with (other)
 	{
 		instance_create_layer(x, y,  "Floor", o_floor);
