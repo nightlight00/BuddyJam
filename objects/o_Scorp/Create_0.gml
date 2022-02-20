@@ -3,6 +3,7 @@
 image_xscale = 0.6;
 image_yscale = image_xscale;
 
+xscaler = 1;
 
 				//Spider Animations
 ///////////////////////////////////////////////////////

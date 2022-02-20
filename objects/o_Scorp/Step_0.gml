@@ -24,12 +24,12 @@ if(distance_to_object(o_player) > 50 and distance_to_object(o_player) < 300)
 			if (shoot_timer-- < 0 and mode == 1)
 			{
 				state = s_scorp_shot;
-				playSound(snd_laser, 1, false, x, y, 0.3, true);
-				var laser = instance_create_layer(x+(20*(image_xscale)), y+(30*image_yscale), "Enemy", o_scorp_bullet);
+				playSound(snd_scorp_gun, 1, false, x, y, 0.3, true);
+				var laser = instance_create_layer(x+(20*(image_xscale*xscaler)), y+(30*image_yscale), "Enemy", o_scorp_bullet);
 				laser.direction = point_direction(x, y, o_player.x, o_player.y) + random_range(-5, 5);
 				laser.image_angle = laser.direction;
 				laser.speed = 3;
-				shoot_timer = 10;
+				shoot_timer = 6;
 				done = true
 			}
 			break;
@@ -47,7 +47,7 @@ if(distance_to_object(o_player) > 50 and distance_to_object(o_player) < 300)
 				{
 					playSound(snd_desintegration, 1, false, x, y, 0.5, true);
 					localspd = 0;
-					var laser = instance_create_layer(x-(10*(image_xscale)), y-(image_yscale), "Enemy", o_scorp_laser);
+					var laser = instance_create_layer(x-(10*(image_xscale*xscaler)), y-(image_yscale), "Enemy", o_scorp_laser);
 					laser.direction = attack_dir + 90;
 					laser.image_angle = laser.direction;
 					laser_charge = 50;
@@ -102,6 +102,11 @@ else
 
 }
 
+// face towards player
+if (o_player.x > x) {
+	xscaler = -1; }
+else {
+	xscaler = 1; }
 
 // simple
 if (image_yscale >= 1.6) {

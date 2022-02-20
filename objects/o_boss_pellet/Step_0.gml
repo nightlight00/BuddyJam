@@ -1,6 +1,6 @@
 /// @description 
 lifetime--;
-if (lifetime < 70) {
+if (lifetime < 180) {
 	speed += 0.05;
 	speed = clamp(speed, 0, 3.5);
 	if (lifetime <= 0) {

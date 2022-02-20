@@ -28,6 +28,8 @@ switch (dust_style) {
 			}
 		}
 		break;
+	case 9: // wall break dust
+		vspeed += 0.023;
 	case 5: // egg dust
 		hspeed *= 0.99;
 		vspeed += 0.056;
@@ -37,6 +39,20 @@ switch (dust_style) {
 	case 7: // flower dust
 		image_angle += 15 * (dust_lifetime / 3);
 		image_alpha -= 0.02;
+		break;
+	case 8: // menu dust
+		vspeed *= 1.001;
+		image_angle += hspeed * 9;
+		x += random_range(-2, 2);
+		image_xscale *= random_range(0.99, 1.01);
+		image_xscale = clamp(image_xscale, 0.5, 1.3);
+		image_yscale = image_xscale;
+		break;
+	case 10: // worm dust
+	case 11: // scorp dust
+		vspeed += 0.052;
+		image_alpha -= 0.017;
+		image_angle += hspeed * 5;
 		break;
 }
 

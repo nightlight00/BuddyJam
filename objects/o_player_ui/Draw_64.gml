@@ -1,3 +1,10 @@
+
+// draw slightly dark room if boss alive
+if (instance_exists(o_boss_s1) || instance_exists(o_boss_s2)) {
+	//draw_sprite_ext(s_test, 0, 0, 0, display_get_gui_width() / 8, display_get_gui_height() / 8, 0, c_black, 0.15);
+}
+
+
 var c = c_black, hei = display_get_gui_height(), _wid = display_get_gui_width();
 draw_rectangle_color(0, hei - 50, 180, hei, c, c, c, c, false);
 

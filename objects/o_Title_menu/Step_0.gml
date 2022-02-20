@@ -1,3 +1,10 @@
+
+// add dust for cool look
+for (var i = 0; i < 1; i++) {
+	createDust(8, random_range(-192, room_width), -16);
+}
+
+
 //get inputs
 up_key = keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"));
 down_key = keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S"));
@@ -10,9 +17,17 @@ op_length = array_length(option[menu_level]);
 pos += down_key - up_key;
 if (pos >= op_length) {pos = 0}
 if (pos < 0) {pos = op_length-1}
+if (lastpos != pos) {
+	playSound(snd_menuclick, 0, false, x, y, 1, false);
+	lastpos = pos;
+}
+
+// play select sound on enter event
+if (Enter_event) {
+	playSound(snd_menuselect, 0, false, x, y, 1, false);
+}
 
 //using the options
-
 var _sml = menu_level;
 switch(menu_level)
 {
@@ -42,12 +57,13 @@ switch(menu_level)
 			menu_level = 1;	
 			break;
 				
-			case 3:
-			menu_level = 2;
+			case 4:
+			room_goto(rm_end);
+			//menu_level = 2;
 			break;
 				
 			//quit game
-			case 4:	
+			case 3:	
 			game_end();	
 			break;
 		}

@@ -8,9 +8,10 @@ image_xscale += (other.proj_damage * (1 - defense)) / MaxHp;
 image_yscale = image_xscale;
 
 if (hp < 0) {
+	instance_create_layer(x, y, "Instances", o_boss_death);
 	instance_destroy();
-	show_message("u win");
-	game_end();
+	//show_message("u win");
+	///game_end();
 }
 else { // change defense
 	defense = 0;

@@ -42,17 +42,22 @@ switch (current_weap) {
 			}
 		}
 		break;
+	case 3: // railgun
 	case 5: // launcher
 		if (current_cooldown == weap_cooldown - 1) {
 			// add 'poison' since it slows movement speed
 			o_player.encumbered = true;
-			o_player.encumber_timer = 35;
+			if (o_player.encumber_timer < 0) {
+				o_player.encumber_timer = 35; }
+			else {
+				o_player.encumber_timer += 35; }
 		}
 		break;
 }
 
 if (last_weap != current_weap) {
 	swapWeap(current_weap);
+	playSound(snd_weapon_switch, 0, false, x, y, 0.4, false);
 	last_weap = current_weap;
 	image_index = current_weap;
 }

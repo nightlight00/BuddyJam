@@ -1,4 +1,7 @@
 
+// draw vines
+draw_sprite_ext(s_vinetile, 0, x, y, 1.45, 1, 0, c_white, 0.25);
+
 // to give extra life to the boss
 wiggle = sin(current_time / 400) * 1.5;
 wiggle2 = sin(current_time / 150) * 1.5;

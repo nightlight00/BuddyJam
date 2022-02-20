@@ -1,1 +1,2 @@
 /// @description 
+spawnTimer = 0;

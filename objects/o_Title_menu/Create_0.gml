@@ -9,15 +9,17 @@ op_border = 8;
 op_space = 32;
 
 pos = 0;
+lastpos = 0;
 
+audio_listener_set_position(0, x, y, 0);
 global.masterVolume = 1;
 
 //pause menu
 option[0, 0] = "Commence";
 option[0, 1] = "Skip to boss : DEBUG";
 option[0, 2] = "Settings";
-option[0, 3] = "Creators";
-option[0, 4] = "Depart";
+option[0, 4] = "DEBUG : end";// has to be on itch page anyways
+option[0, 3] = "Depart";
 
 //settings menu
 option[1, 0] = "Window Size : windowed";

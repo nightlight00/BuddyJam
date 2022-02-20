@@ -3,4 +3,4 @@
 // Inherit the parent event
 event_inherited();
 
-lifetime = 90;
+lifetime = 200;

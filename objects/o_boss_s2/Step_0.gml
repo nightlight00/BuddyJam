@@ -95,6 +95,8 @@ if (attack_timer > 0)
 					case 2: origX = 33 * image_xscale; origY = 11 * image_yscale; break;
 					case 3: origX = -33 * image_xscale; origY = 11 * image_yscale; break;
 				}
+				// play chime sound
+				playSound(snd_chime, 0, false, x + wiggle + origX, y + 32 + wiggle2 + origY, 0.4, true);
 				// creates pellets, they speed up as they travel
 				var pel = instance_create_layer(x + wiggle + origX, y + 32 + wiggle2 + origY, "Player", o_boss_pellet);
 				pel.direction = point_direction(x + wiggle + origX, y + 32 + wiggle2 + origY, o_player.x, o_player.y);
@@ -159,9 +161,10 @@ if (attack_timer > 0)
 				if (hp < MaxHp * 0.5) { amt++; }
 				if (hp < MaxHp * 0.2) { amt++; }
 				for (var i = 0; i < amt; i++) {
-					with (instance_find(o_floor, irandom(instance_number(o_floor) - 1))) {
-						instance_create_layer(x, y-192, "Instances", o_falling_flower);
-					}
+					instance_create_layer(o_player.x + random_range(-150, 150), y - random_range(64, 128), "Instances", o_falling_flower);
+			//		with (instance_find(o_floor, irandom(instance_number(o_floor) - 1))) {
+			//			instance_create_layer(x, y-192, "Instances", o_falling_flower);
+			//		}
 				}
 			}
 			break;

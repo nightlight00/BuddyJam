@@ -79,7 +79,7 @@ ds_map_add(playerWeapons[5], "weap_sound", snd_laser);
 
 current_cooldown = 0;
 
-current_weap = 5;
+current_weap = 0;
 swapWeap(current_weap);
 last_weap = current_weap;
 

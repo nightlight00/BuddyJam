@@ -88,4 +88,58 @@ switch (dust_style) {
 		}
 		dust_lifetime = 20;
 		break;
+	case 8: // menu dust falling
+		image_index = irandom(6);
+		sprite_index = s_menudust;
+		image_alpha = random_range(0.5, 0.8);
+		if (image_xscale == 1) {
+			image_xscale = random_range(0.8, 1.2);
+			image_yscale = image_xscale;
+		}
+		if (speed == 0) {
+			hspeed = random_range(1, 3);
+			vspeed = random_range(1, 3);
+		}
+		dust_lifetime = 999;
+		break;
+	case 9: // wall break
+		image_index = irandom(5);
+		sprite_index = s_wallbreakdust;
+		if (image_xscale == 1) {
+			image_xscale = random_range(0.9, 1.2);
+			image_yscale = image_xscale;
+		}
+		if (speed == 0) {
+			vspeed = random(-0.6) - 0.6;
+			hspeed = random_range(-0.9, 0.9);
+		}
+		dust_lifetime = 90;
+		break;
+	case 10: // worm death
+	case 11: // scorp death
+		// redo this to only do proper sprites
+		if (dust_style == 11) { // scorp
+			sprite_index = s_enemscorpdust;
+			image_index = irandom(5);
+		} else { // default to worm
+			sprite_index = s_enemwormdust;
+			image_index = irandom(3);
+		}
+		
+		if (image_xscale == 1) {
+			image_xscale = random_range(0.8, 1.1);
+			image_yscale = image_xscale;
+		}
+		if (speed == 0) {
+			vspeed = random(-0.6) - 0.4;
+			hspeed = random_range(-1.2, 1.2);
+		}
+		dust_lifetime = 60;
+		image_angle = random(360);
+		break;
 }
+
+
+
+
+		

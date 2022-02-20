@@ -1,5 +1,5 @@
 
-for (var i = 0; i < 10; i++)
+for (var i = 0; i < 30; i++)
 {
 	var op1 = 0;
 	if (x > room_width/2) { op1 = 2; }

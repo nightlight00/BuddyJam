@@ -3,6 +3,10 @@ draw_set_font(f_font);
 draw_set_valign(fa_top);
 draw_set_halign(fa_left);
 
+// draw title background
+draw_sprite_ext(s_titlescreen, 0, 0, 0, 2, 2, 0, c_white, 1);
+
+
 //dynamically get width adn height of menu
 var _new_width = 0;
 for (var i = 0; i < op_length; i++)

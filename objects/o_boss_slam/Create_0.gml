@@ -1,0 +1,1 @@
+playSound(snd_slam, 0, false, x, y, 0.4, false);
