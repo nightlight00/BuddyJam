@@ -126,7 +126,7 @@ switch(menu_level)
 					break;
 					
 				case 1: 
-					url_open("https://running-motion.itch.io");
+					url_open("https://motion-dev.itch.io");
 					break;
 					
 				case 2:

@@ -148,18 +148,21 @@ if (encumbered) {
 
 // bleeding debuff - drains health when above 10% of max
 if (global.bleed) {
-	if (global.playerHealth <= global.playerHealthMax / 10) {
+	if (global.playerHealth <= global.playerHealthMax * 10 / 100) {
 		global.bleed = false; }
 	else {
 		if (global.bleed_counts > 0) {
-			global.playerHealth -= (global.bleed_damage / 7) * global.bleed_counts;
+			
 			if (global.bleed_cool_down-- < 0) {
-				global.bleed_counts--;
 				global.bleed_cool_down = 25;
+				global.bleed_counts--
+				global.playerHealth -= global.bleed_damage;
 			}
-		}
-		else {
-			global.bleed = false;
+			if (global.bleed_counts <= 0)
+			{
+				global.bleed = false;
+			}
+			
 		}
 	}
 }

@@ -26,8 +26,9 @@ if (distance_to_object(o_player) <= attack_dis)
 				global.playerHealth -= enemydamage;
 		
 				global.bleed = true;
+				global.bleed_damage = enemydamage/ 5;
 				global.bleed_cool_down = 25; 
-				global.bleed_counts = 1;
+				global.bleed_counts = 10;
 						
 			
 			}
