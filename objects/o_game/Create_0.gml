@@ -18,7 +18,7 @@ if (file_exists("Savedgame.save"))
 	while (array_length(_loadData) > 0)
 	{
 		var _saveEnemyLevel = array_pop(_loadData);
-		global.enemyLevel =  _saveEnemyLevel + 1;
+		global.enemyLevel =  _saveEnemyLevel;
 	}
 	show_debug_message("game loaded" + _string);
 }

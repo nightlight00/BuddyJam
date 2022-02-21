@@ -22,11 +22,12 @@ audio_listener_set_position(0, x, y, 0);
 global.masterVolume = 1;
 
 //pause menu
-option[0, 0] = "Commence";
-option[0, 1] = "Skip to boss : DEBUG";
-option[0, 2] = "Settings";
+option[0, 0] = "Commence Casual";
+option[0, 1] = "Commence Hardcore";
+option[0, 2] = "Skip to boss : DEBUG";
+option[0, 3] = "Settings";
 //option[0, 4] = "DEBUG : end"; dont keep this in
-option[0, 3] = "Depart";
+option[0, 4] = "Depart";
 
 //settings menu
 option[1, 0] = "Window Size : windowed";

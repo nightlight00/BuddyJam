@@ -38,6 +38,16 @@ switch(menu_level)
 		{
 			//this is start game
 			case 0:	
+			// music
+			audio_stop_sound(Calyx_Title_Theme);
+			var mus = audio_play_sound(Calyx_Level_Track, 4, true);
+			audio_sound_gain(mus, 0, 0);
+			audio_sound_gain(mus, 1, 10000);
+			// starts actual game
+			room_goto_next();	
+			break;
+			
+			case 1:
 			// resets enemy level
 			if(file_exists("Savedgame.save"))
 			{
@@ -52,8 +62,9 @@ switch(menu_level)
 			// starts actual game
 			room_goto_next();	
 			break;
+			
 				
-			case 1:
+			case 2:
 			audio_stop_sound(Calyx_Title_Theme);
 			var mus = audio_play_sound(Calyx_Level_Track, 4, true);
 			audio_sound_gain(mus, 0, 0);
@@ -62,17 +73,17 @@ switch(menu_level)
 			break;
 				
 			//settings
-			case 2: 
+			case 3: 
 			menu_level = 1;	
 			break;
 				
-			case 4:
+			case 5:
 			room_goto(rm_end);
 			//menu_level = 2;
 			break;
 				
 			//quit game
-			case 3:	
+			case 4:	
 			game_end();	
 			break;
 		}
