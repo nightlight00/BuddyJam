@@ -1,5 +1,5 @@
 /// @description 
-
+s_ambience = 3000;
 player_dead = false;
 safe_dir = 0;
 

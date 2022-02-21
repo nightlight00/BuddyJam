@@ -1,4 +1,8 @@
-
+if (s_ambience-- <= 0)
+	{
+		audio_play_sound_at(ambience, x+ 20, y + 20, 0, 100, 100,  1, false, 1);
+		s_ambience = irandom_range(3000, 6000);
+	}
 global.playerImmuneFrames--;
 
 if (draw_helper++ > 5) {
