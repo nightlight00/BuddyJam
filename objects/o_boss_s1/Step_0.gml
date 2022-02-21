@@ -1,4 +1,6 @@
 
+immune--;
+
 /// @description 
 if (sprite_index == s_spawn_fx) {
 	spawnTimer++;

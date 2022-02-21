@@ -105,6 +105,7 @@ switch(menu_level)
 		global.masterVolume = clamp(global.masterVolume, 0, 1);
 			
 		option[1, 1] = "Master Volume : " + string(round(global.masterVolume * 100)) + "%";
+		audio_set_master_gain(0, global.masterVolume);
 		//Change Controls code here
 		break;
 			

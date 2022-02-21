@@ -3,7 +3,8 @@
 audio_stop_all();
 var mus = audio_play_sound(Calyx_Title_Theme, 4, true);
 audio_sound_gain(mus, 0, 0);
-audio_sound_gain(mus, 1, 10000);
+audio_sound_gain(mus, 0.4, 6000);
+audio_sound_gain(mus, 1, 12000);
 
 width = 112;
 height = 184;
@@ -24,7 +25,7 @@ global.masterVolume = 1;
 option[0, 0] = "Commence";
 option[0, 1] = "Skip to boss : DEBUG";
 option[0, 2] = "Settings";
-option[0, 4] = "DEBUG : end";// has to be on itch page anyways
+option[0, 4] = "DEBUG : end"; // has to be on itch page anyways
 option[0, 3] = "Depart";
 
 //settings menu
