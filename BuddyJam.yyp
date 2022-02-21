@@ -107,6 +107,7 @@
     {"id":{"name":"o_player","path":"objects/o_player/o_player.yy",},"order":3,},
     {"id":{"name":"o_laser_boss","path":"objects/o_laser_boss/o_laser_boss.yy",},"order":0,},
     {"id":{"name":"o_scorp_bullet","path":"objects/o_scorp_bullet/o_scorp_bullet.yy",},"order":4,},
+    {"id":{"name":"s_cursor","path":"sprites/s_cursor/s_cursor.yy",},"order":1,},
     {"id":{"name":"_4340482C_3071_47FC_BF6E_5FF978F2D475","path":"sprites/_4340482C_3071_47FC_BF6E_5FF978F2D475/_4340482C_3071_47FC_BF6E_5FF978F2D475.yy",},"order":13,},
     {"id":{"name":"o_spider_death","path":"objects/o_spider_death/o_spider_death.yy",},"order":1,},
     {"id":{"name":"s_bullets","path":"sprites/s_bullets/s_bullets.yy",},"order":1,},

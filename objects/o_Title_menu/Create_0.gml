@@ -1,4 +1,7 @@
 
+window_set_cursor(cr_none);
+cursor_sprite = s_cursor;
+
 // music
 audio_stop_all();
 var mus = audio_play_sound(Calyx_Title_Theme, 4, true);
