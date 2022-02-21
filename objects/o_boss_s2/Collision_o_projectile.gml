@@ -4,7 +4,7 @@ other.penetrate -= 1;
 
 hp -= other.proj_damage * (1 - defense);
 
-image_xscale += (other.proj_damage * (1 - defense)) / MaxHp;
+image_xscale += ((other.proj_damage * (1 - defense)) / MaxHp) * (1 - defense);
 image_yscale = image_xscale;
 
 if (hp < 0) {
@@ -16,7 +16,7 @@ if (hp < 0) {
 else { // change defense
 	defense = 0;
 	if (hp < MaxHp * 0.5) {
-		defense += 0.15;
+		defense += 0.25;
 	}
 	if (hp < MaxHp * 0.2) {
 		defense += 0.35;

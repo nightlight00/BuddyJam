@@ -1,4 +1,5 @@
 
+
 if (instance_exists(o_player))
 {
 	if (o_player.player_dead) {

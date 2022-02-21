@@ -44,11 +44,20 @@ switch(menu_level)
 				file_delete("Savedgame.save")
 			}
 			show_debug_message("Game was reset");
+			// music
+			audio_stop_sound(Calyx_Title_Theme);
+			var mus = audio_play_sound(Calyx_Level_Track, 4, true);
+			audio_sound_gain(mus, 0, 0);
+			audio_sound_gain(mus, 1, 10000);
 			// starts actual game
 			room_goto_next();	
 			break;
 				
 			case 1:
+			audio_stop_sound(Calyx_Title_Theme);
+			var mus = audio_play_sound(Calyx_Level_Track, 4, true);
+			audio_sound_gain(mus, 0, 0);
+			audio_sound_gain(mus, 1, 10000);
 			room_goto(rm_Boss);
 			break;
 				
