@@ -1,5 +1,4 @@
-x =  o_player.x -200;
-y =  o_player.y - 100;
+
 //get inputs
 up_key = keyboard_check_pressed(vk_up)
 down_key = keyboard_check_pressed(vk_down)
@@ -96,32 +95,6 @@ switch(menu_level)
 		break;
 	}
 	break;
-		
-	case 2: // creator menu
-		if (Enter_event) {
-			switch (pos) {
-				case 0:
-					url_open("https://nightlight00.itch.io");
-					break;
-					
-				case 1: 
-					url_open("https://motion-dev.itch.io/");
-					break;
-					
-				case 2:
-					url_open("https://mystro1234.itch.io");
-					break;
-					
-				case 3:
-					url_open("https://pbandana.itch.io");
-					break;
-					
-				case 4:
-					menu_level = 0;
-					break;
-			}
-		}
-		break;
 }
 if _sml != menu_level {pos = 0}
 	

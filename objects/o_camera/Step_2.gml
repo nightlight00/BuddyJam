@@ -19,7 +19,7 @@ if (instance_exists(o_player))
 	var xcur = camera_get_view_x(view_camera[0]);
 	var ycur = camera_get_view_y(view_camera[0]);
 	
-	camera_set_view_pos(view_camera[0], lerp(xcur, xgoto, .0420), lerp(ycur, ygoto, .0420));
+	camera_set_view_pos(view_camera[0], lerp(xcur, xgoto, .0690), lerp(ycur, ygoto, .0690));
 //	camera_set_view_pos(view_camera[0], round(camera_get_view_x(view_camera[0])), round(camera_get_view_y(view_camera[0])));
 
 	if (screenshake_time > 0) 
