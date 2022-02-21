@@ -140,6 +140,7 @@
     {"id":{"name":"s_vinetile","path":"sprites/s_vinetile/s_vinetile.yy",},"order":14,},
     {"id":{"name":"Calyx_Title_Theme","path":"sounds/Calyx_Title_Theme/Calyx_Title_Theme.yy",},"order":7,},
     {"id":{"name":"Flor","path":"sprites/Flor/Flor.yy",},"order":14,},
+    {"id":{"name":"o_afterimage","path":"objects/o_afterimage/o_afterimage.yy",},"order":6,},
     {"id":{"name":"o_enemy_parent","path":"objects/o_enemy_parent/o_enemy_parent.yy",},"order":0,},
     {"id":{"name":"splegs_walk","path":"sprites/splegs_walk/splegs_walk.yy",},"order":1,},
     {"id":{"name":"s_scorp_stab","path":"sprites/s_scorp_stab/s_scorp_stab.yy",},"order":1,},

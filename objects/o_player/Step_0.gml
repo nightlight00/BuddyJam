@@ -129,6 +129,19 @@ if (PathCoolDown-- <= 0)
 
 // reset max speed before due to numerous speed lowering debuffs
 speed_max = 2.3
+if (keyboard_check(vk_shift)){
+	speed_max += 0.8;
+	image_speed = 1.5;
+	sprint_helper++;
+	if (sprint_helper mod 3 == 0) {
+		var img = instance_create_depth(x, y, depth, o_afterimage);
+		img.image_index = image_index;
+		img.image_xscale = image_xscale;
+	}
+}
+else {
+	image_speed = 1;
+}
 
 // poison debuff - lowers speed
 if (poison) {

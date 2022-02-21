@@ -30,6 +30,7 @@ switch (dust_style) {
 		break;
 	case 9: // wall break dust
 		vspeed += 0.023;
+		image_alpha += 0.017;  
 	case 5: // egg dust
 		hspeed *= 0.99;
 		vspeed += 0.056;

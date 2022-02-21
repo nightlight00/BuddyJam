@@ -3,6 +3,9 @@ if (!instance_exists(o_player) || o_player.player_dead) {
 	return; }
 	
 current_cooldown--;
+if (keyboard_check(vk_shift)) {
+	current_cooldown+=0.25;
+}
 	
 x = o_player.x;
 y = o_player.y;

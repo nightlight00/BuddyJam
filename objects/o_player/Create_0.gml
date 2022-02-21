@@ -17,6 +17,7 @@ speed_max = 2.3;
 
 draw_helper = 0;
 draw_helper_index = 0;
+sprint_helper = 0;
 
 global.playerHealthMax = 17; // 17
 global.playerHealth = global.playerHealthMax
