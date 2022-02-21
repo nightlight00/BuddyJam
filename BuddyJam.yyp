@@ -88,6 +88,7 @@
     {"id":{"name":"snd_weapon_switch","path":"sounds/snd_weapon_switch/snd_weapon_switch.yy",},"order":8,},
     {"id":{"name":"o_smartwalker","path":"objects/o_smartwalker/o_smartwalker.yy",},"order":3,},
     {"id":{"name":"s_eggs2","path":"sprites/s_eggs2/s_eggs2.yy",},"order":12,},
+    {"id":{"name":"s_background","path":"sprites/s_background/s_background.yy",},"order":15,},
     {"id":{"name":"s_boss_stage2_body2","path":"sprites/s_boss_stage2_body2/s_boss_stage2_body2.yy",},"order":9,},
     {"id":{"name":"o_dusts","path":"objects/o_dusts/o_dusts.yy",},"order":3,},
     {"id":{"name":"s_falling_flower","path":"sprites/s_falling_flower/s_falling_flower.yy",},"order":3,},

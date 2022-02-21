@@ -49,6 +49,10 @@ switch(menu_level)
 				
 			case 3:
 			// go to main menu
+			instance_destroy(o_game);
+			instance_destroy(o_player);
+			instance_destroy(o_weapon);
+			instance_destroy(o_player_ui);
 			room_goto(rm_Title_screen);	
 			break;
 				

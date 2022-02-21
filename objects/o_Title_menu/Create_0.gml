@@ -25,7 +25,7 @@ global.masterVolume = 1;
 option[0, 0] = "Commence";
 option[0, 1] = "Skip to boss : DEBUG";
 option[0, 2] = "Settings";
-option[0, 4] = "DEBUG : end"; // has to be on itch page anyways
+//option[0, 4] = "DEBUG : end"; dont keep this in
 option[0, 3] = "Depart";
 
 //settings menu
