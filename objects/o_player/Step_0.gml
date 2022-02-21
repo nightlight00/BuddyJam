@@ -10,6 +10,19 @@ if (draw_helper++ > 5) {
 audio_listener_position(x, y, 0);
 audio_set_master_gain(0, global.masterVolume);
 
+if keyboard_check(vk_escape)
+{
+	if instance_exists(o_pause_menu)
+	{
+		
+	}
+	else
+	{
+	instance_create_layer(x, y, "Enemy", o_pause_menu)
+	return;
+	}
+}
+
 // handle player death
 if(global.playerHealth <= 0)
 {

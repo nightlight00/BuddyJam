@@ -5,12 +5,14 @@ if (instance_exists(o_player) && drawTimer < 0) {
 			global.enemyLevel++;
 			if (global.enemyLevel >= 6)
 			{
+				audio_play_sound(Ported, 3, 0);
 				room_goto(rm_Boss);
 			}
 			else
 			{
 				// sets the teleporter to on
 				Save_Game();
+				audio_play_sound(Ported, 3, 0);
 				room_goto(rm_arena1);
 			}
 		}
