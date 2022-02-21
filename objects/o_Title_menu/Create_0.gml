@@ -40,6 +40,11 @@ option[2, 2] = "Mystro";
 option[2, 3] = "band";
 option[2, 4] = "Return";
 
+// controls
+control[0] = "Move : WASD";
+control[1] = "Shoot : Left Mouse";
+control[2] = "Sprint : Shift";
+control[3] = "Menu : Escape + Arrows";
 
 op_length = 0;
 menu_level = 0;
