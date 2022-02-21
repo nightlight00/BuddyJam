@@ -179,17 +179,15 @@ switch (worldgen_stage)
 			if (instance_place(x, y + global.cellSize, o_floor)) { sides++; }
 			if (instance_place(x, y - global.cellSize, o_floor)) { sides++; }
 			
-			if (sides == 4 && irandom(70) == 0 && !instance_place(x, y, o_wall)) {
+			if (sides == 4 && irandom(70) == 0 && !instance_place(x, y, o_wall) && distance_to_object(o_player) > 96) {
 				var near = instance_nearest(x, y, o_enemy_parent);
 				if (distance_to_object(near) > 48) {
 					
 					var enem_list = ds_list_create();
-					for (var d = 0; d < 3; d++) { // add common enemies to list
-						ds_list_add(enem_list, o_Alien_Hound.object_index);
-						ds_list_add(enem_list, o_Spider_Enemy);
-						ds_list_add(enem_list, o_Scorp);
-						
-					}
+					ds_list_add(enem_list, o_Alien_Hound.object_index);
+					ds_list_add(enem_list, o_Spider_Enemy);
+					ds_list_add(enem_list, o_Scorp);
+					
 					// put it out here so its only added once, so less often chance
 					ds_list_add(enem_list, o_Scorp);
 			

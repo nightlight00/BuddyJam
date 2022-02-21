@@ -21,7 +21,7 @@ if(distance_to_object(o_player) > 50 and distance_to_object(o_player) < 300)
 		{
 			case 0:
 			mode = 1;
-			if (shoot_timer-- < 0 and mode == 1)
+			if (shoot_timer-- < 0 and mode == 1 && !collision_line(x, y, o_player.x, o_player.y, o_wall, true, true))
 			{
 				state = s_scorp_shot;
 				playSound(snd_scorp_gun, 1, false, x, y, 0.3, true);
@@ -37,7 +37,7 @@ if(distance_to_object(o_player) > 50 and distance_to_object(o_player) < 300)
 			//laser attack
 			case 1:
 			mode = 2;
-			if (laser_charge-- < 0 and mode == 2)
+			if (laser_charge-- < 0 and mode == 2 && !collision_line(x, y, o_player.x, o_player.y, o_wall, true, true))
 			{
 				attack_dir = point_direction(x, y, o_player.x, o_player.y);
 				
