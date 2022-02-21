@@ -4,4 +4,4 @@ image_yscale = image_xscale;
 teleporter_active = false;
 drawTimer = 60;
 
-Current_lvl = global.enemyLevel++;
+Current_lvl = global.enemyLevel + 1;

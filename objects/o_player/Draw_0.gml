@@ -1,8 +1,8 @@
 if (instance_exists(o_goal)) {
 	if (distance_to_object(o_goal) < 32 && o_goal.drawTimer < 0) {
-		draw_set_color(c_white);
+		draw_set_color(c_yellow);
 		draw_set_halign(fa_center);
-		draw_text(x, y-48, "'E' move on to Lvl:" + string(o_goal.Current_lvl));
+		draw_text(x, y-48, "'E'move on to Lvl:" + string(o_goal.Current_lvl));
 		draw_set_halign(fa_left);
 	}
 }
